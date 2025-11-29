@@ -1,0 +1,45 @@
+[project]
+name = "btt-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server for controlling BetterTouchTool on macOS"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "Christian", email = "christian@example.com" }
+]
+keywords = ["mcp", "bettertouchtool", "btt", "macos", "automation", "claude"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: MacOS X",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Desktop Environment",
+    "Topic :: System :: Hardware",
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.22.0",
+    "pydantic>=2.12.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/bettertouchtool-mcp-server"
+Repository = "https://github.com/your-username/bettertouchtool-mcp-server"
+Issues = "https://github.com/your-username/bettertouchtool-mcp-server/issues"
+
+[project.scripts]
+btt-mcp-server = "btt_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.uv]
+dev-dependencies = []
