@@ -1,0 +1,586 @@
+{
+  "BTTPresetCreatorNotes" : "",
+  "BTTPresetInfoURL" : "",
+  "BTTPresetName" : "Default",
+  "BTTPresetColor" : "220.320000, 70.502400, 205.338240, 255.000000",
+  "BTTGeneralSettings" : {
+    "BTTPathSampleSize" : 100,
+    "BTTCMOnTop" : true,
+    "BTTForceForceClickPressure2F" : 700,
+    "BSTLeftHalfBlock" : true,
+    "BTTMinDrawingMovement" : 2,
+    "BTTTouchBarMouseModeClickBlock" : true,
+    "BSTRightHalfBlock" : true,
+    "disableScrollingIf2" : true,
+    "batteryWarning" : false,
+    "BSTDontShowSnapAreasWhileModMoving" : 0,
+    "BSTWindowGrabPosY" : 10,
+    "showTrackpadTab" : true,
+    "singleFingerTapRight" : 0.05000000074505806,
+    "BTTDrawingStrokeWidth" : 4,
+    "cornerSnap" : true,
+    "BTRScrollSpeed" : 1,
+    "BTTTouchBarHapticFeedbackRelease" : 0,
+    "BSTIncreaseSnappingArea" : true,
+    "showDrawingsTab" : true,
+    "SIRIMouseSpeed" : 1,
+    "BTTUseNewUI" : true,
+    "BSTEnableEnhancementCheck" : true,
+    "BTTNotchBarNotchWidgetModeHideLeftFixed" : false,
+    "useAppleRemotePlugin" : false,
+    "BTTTouchBarFontSize" : 15,
+    "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000149011612,
+    "BTRMouseSpeed" : 1,
+    "BSTPreventTopMissionControl" : true,
+    "BSTSnapAreaDefaultDashedBorder" : false,
+    "BTTEnablePalmRecognition" : true,
+    "BSTBrokenAPICheckEnabled" : false,
+    "BTTStageManagerLeftGap" : 190,
+    "BTTAllowThumbIfAllFingersArePlacedSimultaneously" : true,
+    "BTTNotchBarStandardMenubarModeHideRightFixed" : false,
+    "BTTNotchBarNotchWidgetModeShowMiniMenubar" : true,
+    "BTTStageManagerSnappingIncreaseAbsolute" : false,
+    "BTTShowControlStripItem" : true,
+    "BSTSnapAreaDefaultCornerRadius" : 20,
+    "BTTNotchBarNotchMenubarModeHideLeftFixed" : true,
+    "BTTMovePastedToTop" : true,
+    "BTTMaxAllowedDrawingRotation" : 30,
+    "BTTDidRegisterForUpdateStats" : "6.118",
+    "BTTNotchBarNotchWidgetModeHideRightFixed" : false,
+    "BTTStageManagerLeaveGap" : true,
+    "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
+    "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
+    "BSTMoveTreshold" : 2,
+    "BTTHideFomControlStripWhenOpen" : false,
+    "BTTNumberOfStarts" : 3,
+    "BTTForceNormalClickPressure3F" : 150,
+    "showSiriRemoteTab" : true,
+    "SIRIScrollSpeed" : 1,
+    "BTTShowControlStrip" : true,
+    "tpThreeFingerDoubleTapDelay" : 0.5,
+    "showNormalMiceTab" : true,
+    "BTTNotchBarStandardMenubarModeHideLeftScrollable" : true,
+    "BSTSnapAreaDefaultBorderWidth" : 3,
+    "BTTTouchBarHapticFeedback" : 0,
+    "BTTForceNormalClickPressure" : 150,
+    "BTTDrawingRightMouse" : true,
+    "BTTConvertedDevices" : true,
+    "snapBottomRight" : true,
+    "BTTThreeFingerTipTapMinSpread" : 0.029999999999999999,
+    "BTTTouchBarVisible" : false,
+    "BTTIMGURDefault" : true,
+    "BTTNotchBarShowOnStandardScreens" : true,
+    "BSTSnapAreaDefaultBackgroundColor" : "129.991390, 201.122858, 227.012328, 104.550000",
+    "BSTSnapAreaDefaultPictoSize" : 0.69999998807907104,
+    "BSTSnapAreaDefaultBorderColor" : "0.000000, 0.000000, 0.000000, 255.000000",
+    "BTTNotchBarNotchMenubarModeHideLeftScrollable" : true,
+    "BTTNotchBarNotchMenubarModeShowOriginalStatusIcons" : true,
+    "BSTTopMissionControlTreshold" : 34,
+    "BTTNotchBarNotchWidgetModeHideRightScrollable" : false,
+    "BSTSnapAreaDefaultHighlightColor" : "92.625563, 122.647995, 161.664347, 56.100000",
+    "BTTStageManagerLeftGapPercentage" : 0.10000000000000001,
+    "BTTForceForceClickPressure5F" : 600,
+    "BTTForceForceClickPressure" : 700,
+    "BSTMemorySaver" : true,
+    "BTTLastClamshellState" : false,
+    "BTTStageManagerLeaveGapEvenIfHiding" : false,
+    "BTTTouchBarAnimateGroups" : true,
+    "BTTShowBTTWhenControlStripHidden" : true,
+    "BTTFreeSpaceAfterESC" : 10,
+    "mmZoomRepeatDelay" : 0.10000000000000001,
+    "snapTopLeft" : true,
+    "BTTDrawingAreaWidth" : 915,
+    "BTTTiltWheelDelay" : 0.44999998807907104,
+    "twoFingerDoubleTapDelay" : 0.5,
+    "BTTForceNormalClickPressure5F" : 200,
+    "BTTShowESCWhenControlStripHidden" : true,
+    "showBTTRemoteTab" : true,
+    "BTTFilterMagicMouseLeftRightEdge" : true,
+    "BTTNotchBarStandardWidgetModeShowOriginalStatusIcons" : false,
+    "BTTDrawingsHighlightStartPoint" : true,
+    "BTTEnableUsageLogging" : true,
+    "snapBottomLeft" : true,
+    "BTTScreenshotOpenImgurInBrowser" : true,
+    "BTTDontRestartAfterSleep" : true,
+    "BTTForceNormalClickPressure2F" : 140,
+    "BSTSnapAreaDefaultInvisible" : false,
+    "BTTDrawingAreaHeight" : 626,
+    "BTTForceForceClickPressure4F" : 650,
+    "BTTTouchBarUseMonoSpacedFont" : true,
+    "BSTCornerRoundness" : 40,
+    "BTTStageManagerLeftSnappingAreaIncrease" : 222,
+    "BTTForceForceHapticResponse" : 13,
+    "BTTNotchBarStandardMenubarModeHideLeftFixed" : true,
+    "showMagicMouseTab" : true,
+    "BTTNotchBarNotchWidgetModeShowOriginalStatusIcons" : false,
+    "BTTAlwaysShowPresetIndicators" : true,
+    "BTTStageManagerIncreaseEvenIfHiding" : true,
+    "BTTForcedHidden" : false,
+    "showTouchBarTab" : true,
+    "BTTFreeSpaceAfterBTT" : 20,
+    "BTTNotchBarStandardWidgetModeHideRightFixed" : false,
+    "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
+    "BTTDismissIfNothingToShow" : true,
+    "BTTDrawingsRestoreMousePosition" : true,
+    "BSTDisableSnapAreas" : false,
+    "BTTDefaultTBIconWidth" : 22,
+    "BTTStageManagerLeftGapAbsolute" : false,
+    "snapTopRight" : true,
+    "BSTSnapAreaDefaultShowPictogram" : false,
+    "BTTSelectedKeyboardTabIndex" : 0,
+    "BTTTouchBarKeepIconRatio" : true,
+    "BSTBrokenAPICheckDelay" : 0.20000000000000001,
+    "BTTStageManagerIncrease" : true,
+    "showKeyboardTab" : true,
+    "BTTForceForceClickPressure3F" : 700,
+    "disableScrollingIf3" : true,
+    "BSTWindowGrabPosX" : 67,
+    "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
+    "BTTAutoSwitchToOldKeyboardImplementation" : true,
+    "BTTTpThreeFingerSwipeSensitivity" : 0.29999999999999999,
+    "BTTCopyImgurURLToClipboard" : true,
+    "BTTForceNormalHapticResponse" : 12,
+    "BTTTouchBarSupportEnabled" : true,
+    "BTTDaysToKeepHistory" : 14,
+    "BTTNotchBarNotchMenubarModeHideRightFixed" : true,
+    "BTTDefaultTBIconHeight" : 22,
+    "BTTNotchBarStandardMenubarModeShowOriginalStatusIcons" : true,
+    "BTTNotchBarStandardWidgetModeHideLeftFixed" : false,
+    "singleFingerTapLeft" : 0.44999998807907104,
+    "BTTNotchBarStandardWidgetModeHideLeftScrollable" : false,
+    "BTTForceNormalClickPressure4F" : 175,
+    "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
+    "BSTSnapAreaDefaultAnimationDuration" : 0.30000001192092896,
+    "BTTNotchBarStandardWidgetModeHideRightScrollable" : false,
+    "BTTNotchBarStandardMenubarModeHideRightScrollable" : false,
+    "BTTNoShortcutDelay" : true,
+    "showOtherTriggersTab" : true,
+    "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
+    "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000149011612
+  },
+  "BTTPresetUUID" : "ED1C8E5B-3E49-48BD-A8D4-2550907F98C7",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1764432921.4798651,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "B5414087-248D-425C-8600-591D80CE27B4",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "u",
+          "BTTShortcutKeyCode" : 32,
+          "BTTShortcutAdvancedModifierKeys" : "1966123",
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 3,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764433425.122874,
+              "BTTTriggerParentUUID" : "B5414087-248D-425C-8600-591D80CE27B4",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "2B5DF819-9A92-4367-9CD4-5FBB152E6757",
+              "BTTPredefinedActionType" : 248,
+              "BTTPredefinedActionName" : "Trigger Named Trigger (Configured in Other Tab)",
+              "BTTNamedTriggerToTrigger" : "Get URL under cursor",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 30,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1764432775.084862,
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescriptionReadOnly" : "Named Trigger: Cmd UP",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTUUID" : "5AC97D3C-A2E3-4A61-BDAF-0032AE7754FC",
+          "BTTTriggerName" : "Cmd UP",
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1752248111.6360641,
+              "BTTTriggerParentUUID" : "5AC97D3C-A2E3-4A61-BDAF-0032AE7754FC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "D6CBE5FF-6EDF-482F-82A6-97C978484059",
+              "BTTPredefinedActionType" : 187,
+              "BTTPredefinedActionName" : "⌘ CMD Key Up",
+              "BTTOrder" : 2
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTHUDText" : "u",
+            "BTTHUDDetailText" : "u"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769965492.1585331,
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescriptionReadOnly" : "Named Trigger: Go to URL (Input Param)",
+          "BTTTriggerTypeDescription" : "Takes URL as a parameter (argv[0])",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTUUID" : "CAC43A69-3A62-4A9C-A13E-91E47214FCEC",
+          "BTTNamedTriggerAIDescription" : "Takes URL as a parameter (argv[0])",
+          "BTTCustomContextMenuItemConfig" : {
+            "BTTNamedTriggerAIDescription" : "Takes URL as a parameter (argv[0])"
+          },
+          "BTTTriggerName" : "Go to URL (Input Param)",
+          "BTTOrder" : 2,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764435820.2802711,
+              "BTTTriggerParentUUID" : "CAC43A69-3A62-4A9C-A13E-91E47214FCEC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "2960AEA4-09F2-49DE-8E91-0DEA06B579DA",
+              "BTTPredefinedActionType" : 252,
+              "BTTPredefinedActionName" : "Run JavaScript for Automation (async in background)",
+              "BTTAdditionalActionData" : {
+                "BTTAppleScriptRunInBackground" : true,
+                "BTTAIScriptType" : 3,
+                "BTTScriptType" : 1,
+                "BTTAppleScriptString" : "function run(argv) {\n    const app = Application.currentApplication();\n    app.includeStandardAdditions = true;\n    \n    let targetURL = \"\";\n    \n    if (argv && argv.length > 0 && argv[0]) {\n        targetURL = argv[0];\n    } else {\n        // Fallback to clipboard if no parameter provided\n        targetURL = app.theClipboard();\n    }\n    \n    // Basic validation\n    if (!targetURL || !targetURL.startsWith(\"http\")) {\n        app.displayNotification(\"No valid URL provided\", {\n            withTitle: \"Navigate to URL\"\n        });\n        return \"Error: No valid URL\";\n    }\n    \n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    // List of supported browsers\n    const browserNames = [\"Arc\", \"Safari\", \"Google Chrome\", \"Brave Browser\", \"Microsoft Edge\", \"Opera\"];\n    \n    // Function to navigate in a specific browser\n    const navigateToBrowser = (browserName) => {\n        let browser = null;\n        \n        switch(browserName) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                browser.windows[0].currentTab.url = targetURL;\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n        }\n        \n        return browserName;\n    };\n    \n    try {\n        let usedBrowser = \"\";\n        \n        // Check if frontmost app is a browser\n        if (browserNames.includes(frontApp)) {\n            // Active window is a browser, use it\n            usedBrowser = navigateToBrowser(frontApp);\n            app.displayNotification(`Navigating to: ${targetURL}`, {\n                withTitle: \"URL Navigation\"\n            });\n        } else {\n            // Active window is not a browser, check for running browsers\n            const runningBrowsers = [];\n            \n            for (const browserName of browserNames) {\n                try {\n                    const browser = Application(browserName);\n                    if (browser.running()) {\n                        runningBrowsers.push(browserName);\n                    }\n                } catch (e) {\n                    // Browser not installed or not accessible, skip\n                }\n            }\n            \n            if (runningBrowsers.length === 1) {\n                // Exactly one browser is running, use it\n                usedBrowser = navigateToBrowser(runningBrowsers[0]);\n                app.displayNotification(`Navigating in ${runningBrowsers[0]}: ${targetURL}`, {\n                    withTitle: \"URL Navigation\"\n                });\n            } else if (runningBrowsers.length === 0) {\n                app.displayNotification(\"No browser is running\", {\n                    withTitle: \"Navigate to URL\"\n                });\n                return \"Error: No browser running\";\n            } else {\n                // Multiple browsers running\n                app.displayNotification(`Multiple browsers running. Please focus one.`, {\n                    withTitle: \"Navigate to URL\"\n                });\n                return `Error: Multiple browsers running (${runningBrowsers.join(\", \")})`;\n            }\n        }\n        \n        // Return success with browser used and URL\n        return JSON.stringify({\n            success: true,\n            browser: usedBrowser,\n            url: targetURL\n        });\n        \n    } catch (error) {\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Navigation Error\"\n        });\n        return `Error: ${error.toString()}`;\n    }\n}",
+                "SelectedAction" : 252,
+                "BTTAppleScriptUsePath" : false,
+                "BTTScriptLocation" : 0
+              },
+              "BTTInlineAppleScript" : "function run(argv) {\n    const app = Application.currentApplication();\n    app.includeStandardAdditions = true;\n    \n    let targetURL = \"\";\n    \n    if (argv && argv.length > 0 && argv[0]) {\n        targetURL = argv[0];\n    } else {\n        // Fallback to clipboard if no parameter provided\n        targetURL = app.theClipboard();\n    }\n    \n    // Basic validation\n    if (!targetURL || !targetURL.startsWith(\"http\")) {\n        app.displayNotification(\"No valid URL provided\", {\n            withTitle: \"Navigate to URL\"\n        });\n        return \"Error: No valid URL\";\n    }\n    \n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    // List of supported browsers\n    const browserNames = [\"Arc\", \"Safari\", \"Google Chrome\", \"Brave Browser\", \"Microsoft Edge\", \"Opera\"];\n    \n    // Function to navigate in a specific browser\n    const navigateToBrowser = (browserName) => {\n        let browser = null;\n        \n        switch(browserName) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                browser.windows[0].currentTab.url = targetURL;\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                browser.windows[0].activeTab.url = targetURL;\n                break;\n        }\n        \n        return browserName;\n    };\n    \n    try {\n        let usedBrowser = \"\";\n        \n        // Check if frontmost app is a browser\n        if (browserNames.includes(frontApp)) {\n            // Active window is a browser, use it\n            usedBrowser = navigateToBrowser(frontApp);\n            app.displayNotification(`Navigating to: ${targetURL}`, {\n                withTitle: \"URL Navigation\"\n            });\n        } else {\n            // Active window is not a browser, check for running browsers\n            const runningBrowsers = [];\n            \n            for (const browserName of browserNames) {\n                try {\n                    const browser = Application(browserName);\n                    if (browser.running()) {\n                        runningBrowsers.push(browserName);\n                    }\n                } catch (e) {\n                    // Browser not installed or not accessible, skip\n                }\n            }\n            \n            if (runningBrowsers.length === 1) {\n                // Exactly one browser is running, use it\n                usedBrowser = navigateToBrowser(runningBrowsers[0]);\n                app.displayNotification(`Navigating in ${runningBrowsers[0]}: ${targetURL}`, {\n                    withTitle: \"URL Navigation\"\n                });\n            } else if (runningBrowsers.length === 0) {\n                app.displayNotification(\"No browser is running\", {\n                    withTitle: \"Navigate to URL\"\n                });\n                return \"Error: No browser running\";\n            } else {\n                // Multiple browsers running\n                app.displayNotification(`Multiple browsers running. Please focus one.`, {\n                    withTitle: \"Navigate to URL\"\n                });\n                return `Error: Multiple browsers running (${runningBrowsers.join(\", \")})`;\n            }\n        }\n        \n        // Return success with browser used and URL\n        return JSON.stringify({\n            success: true,\n            browser: usedBrowser,\n            url: targetURL\n        });\n        \n    } catch (error) {\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Navigation Error\"\n        });\n        return `Error: ${error.toString()}`;\n    }\n}",
+              "BTTOrder" : 4
+            }
+          ],
+          "BTTIconData" : "TU0AKgAAQAj___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAIAAAAGAAAACQAAAAwAAAAOAAAAD_AAAA_wAAAP8AAAD_AAAA4AAAAMAAAACQAAAAYAAAACD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAABwAAAA0AAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA0AAAAGAAAAAQ____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAIAAAAKAAAAD_AAAA_wAAAP8AAAD_AAAAwAAAAIAAAABQAAAAMP___wD___8A____AP___wAAAAAwAAAAUAAAAIAAAADAAAAA_wAAAP8AAAD_AAAA8AAAAIAAAAAQ____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAgAAAAPAAAAD_AAAA_wAAANAAAABgAAAAEP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAABwAAAA4AAAAP8AAAD_AAAA4AAAAFD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAwAAAA0AAAAP8AAAD_AAAAwAAAAED___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABgAAAA4AAAAP8AAAD_AAAAoAAAABD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABQAAAA8AAAAP8AAADwAAAAYP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAACQAAAA_wAAAP8AAADQAAAAEP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABgAAAA_wAAAP8AAADQAAAAIP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAEAAAADwAAAA_wAAANAAAAAQ____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABgAAAA_wAAAP8AAACg____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAMAAAAPAAAAD_AAAA0AAAABD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAwAAAA8AAAAP8AAACg____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAwAAAA8AAAAP8AAACw____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAQAAAA4AAAAP8AAADA____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAADAAAAD_AAAA_wAAAHD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAkAAAAP8AAADwAAAAEP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAcAAAAP8AAADwAAAAIP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAIAAAAP8AAAD_AAAAQP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAADAAAAA_wAAAKD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAKAAAAD_AAAAwP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAQAAAAP8AAAD_AAAAIP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAAD_AAAA_wAAAED___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAACwAAAA_wAAAKD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABgAAAA_wAAAND___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAQAAAAP8AAADw____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAsAAAAP8AAABw____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAADgAAAA_wAAAED___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAABgAAAAsAAAAOAAAAD_AAAA_wAAAP8AAAD_AAAAMP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAoAAAAP8AAACA____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAIAAAADwAAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA8P___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAGAAAAD_AAAAwP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAIAAAANAAAAD_AAAA_wAAAOAAAABwAAAAQP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAABAAAAA_wAAAND___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAIAAAAPAAAAD_AAAA8AAAAGD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAP8AAAD_____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAEAAAANAAAAD_AAAA0AAAACD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAD_AAAA_wAAAPAAAACwAAAAYP___wD___8A____AP___wD___8A____AAAAAIAAAAD_AAAA8AAAABD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAA_wAAAP8AAAD_AAAA_wAAAP8AAADgAAAAQP___wD___8A____AAAAABAAAAD_AAAA_wAAAFD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAMAAAAIAAAADwAAAA_wAAAP8AAABg____AP___wAAAABwAAAA_wAAAMD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAEAAAAKAAAAD_AAAA_wAAADD___8AAAAAwAAAAP8AAABg____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAoAAAAP8AAADg____AAAAAPAAAAD_AAAAMP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAABAAAADwAAAA_wAAAGAAAAD_AAAA_____wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAgAAAAP8AAACwAAAA_wAAAP____8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAADAAAAD_AAAA4AAAAPAAAAD_AAAAIP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAA_wAAAP8AAADAAAAA_wAAAGD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAAP8AAAD_AAAAcAAAAP8AAADA____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAADAAAAD_AAAA4AAAACAAAAD_AAAA_wAAAED___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAACAAAAA_wAAALD___8AAAAAoAAAAP8AAADQAAAAEP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAQAAAA8AAAAP8AAABg____AAAAABAAAADwAAAA_wAAANAAAAAQ____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AAAAAoAAAAP8AAADg____AP___wD___8AAAAAMAAAAPAAAAD_AAAA0AAAAED___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wAAAAAQAAAAoAAAAP8AAAD_AAAAMP___wD___8A____AP___wAAAAAwAAAA8AAAAP8AAAD_AAAAwAAAAGAAAAAg____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAADAAAACAAAAA8AAAAP8AAAD_AAAAYP___wD___8A____AP___wD___8A____AAAAABAAAACgAAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAADgAAAAMP___wD___8A____AP___wD___8A____AP___wD___8A____AAAAACAAAABwAAAAwAAAAPAAAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA_wAAAP8AAAD_AAAA8AAAALAAAABg____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8A____AP___wD___8AABABAAADAAAAAQBAAAABAQADAAAAAQBAAAABAgADAAAABAAAQM4BAwADAAAAAQABAAABBgADAAAAAQACAAABCgADAAAAAQABAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQBAAAABFwAEAAAAAQAAQAABHAADAAAAAQABAAABKAADAAAAAQACAAABUgADAAAAAQACAAABUwADAAAABAAAQNaHcwAHAAAMSAAAQN4AAAAAAAgACAAIAAgAAQABAAEAAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJUUkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4IEhld2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAAAAAATAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENSVCBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA_kEBgQTBCAELQQ7BEgEVQRjBHEEfgSMBJoEqAS2BMQE0wThBPAE_gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC_kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw_sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx_qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy_+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl_Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA_IT9hP6I_4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v_bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ_I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL_IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE_kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+_er_1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7_IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j_SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO_M8Fjw5fFy8f_yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65_t3_Af8mP0p_br+S_7c_23__w==",
+          "BTTGestureNotes" : "Takes URL as a parameter (argv[0])"
+        },
+        {
+          "BTTLastUpdatedAt" : 1769965502.7420468,
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescriptionReadOnly" : "Named Trigger: Go To URL (Clipboard)",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTUUID" : "43599BBD-DAE6-4F32-92BD-713D0E8618E0",
+          "BTTCustomContextMenuItemConfig" : {
+
+          },
+          "BTTTriggerName" : "Go To URL (Clipboard)",
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764469922.0753841,
+              "BTTTriggerParentUUID" : "43599BBD-DAE6-4F32-92BD-713D0E8618E0",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "955B4A4B-E7FA-4282-8CDC-2F51D6AE1CE7",
+              "BTTPredefinedActionType" : 195,
+              "BTTPredefinedActionName" : "Run Apple Script (async in background)",
+              "BTTAdditionalActionData" : {
+                "BTTScriptType" : 1,
+                "BTTAppleScriptString" : "(() => {\n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    const app = Application.currentApplication();\n    app.includeStandardAdditions = true;\n    \n    // Get URL from clipboard\n    const clipboardURL = app.theClipboard();\n    \n    // Basic validation - just check if it looks like a URL\n    if (!clipboardURL || !clipboardURL.startsWith(\"http\")) {\n        app.displayNotification(\"No valid URL found in clipboard\", {\n            withTitle: \"Navigate to URL\"\n        });\n        return;\n    }\n    \n    // List of supported browsers\n    const browserNames = [\"Arc\", \"Safari\", \"Google Chrome\", \"Brave Browser\", \"Microsoft Edge\", \"Opera\"];\n    \n    // Function to navigate in a specific browser\n    const navigateToBrowser = (browserName) => {\n        let browser = null;\n        \n        switch(browserName) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                browser.windows[0].currentTab.url = clipboardURL;\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n        }\n    };\n    \n    try {\n        // Check if frontmost app is a browser\n        if (browserNames.includes(frontApp)) {\n            // Active window is a browser, use it\n            navigateToBrowser(frontApp);\n            app.displayNotification(`Navigating to: ${clipboardURL}`, {\n                withTitle: \"URL from Clipboard\"\n            });\n        } else {\n            // Active window is not a browser, check for running browsers\n            const runningBrowsers = [];\n            \n            for (const browserName of browserNames) {\n                try {\n                    const browser = Application(browserName);\n                    if (browser.running()) {\n                        runningBrowsers.push(browserName);\n                    }\n                } catch (e) {\n                    // Browser not installed or not accessible, skip\n                }\n            }\n            \n            if (runningBrowsers.length === 1) {\n                // Exactly one browser is running, use it\n                navigateToBrowser(runningBrowsers[0]);\n                app.displayNotification(`Navigating in ${runningBrowsers[0]}: ${clipboardURL}`, {\n                    withTitle: \"URL from Clipboard\"\n                });\n            } else if (runningBrowsers.length === 0) {\n                app.displayNotification(\"No browser is running\", {\n                    withTitle: \"Navigate to URL\"\n                });\n            } else {\n                // Multiple browsers running\n                app.displayNotification(`Multiple browsers running (${runningBrowsers.join(\", \")}). Please focus one.`, {\n                    withTitle: \"Navigate to URL\"\n                });\n            }\n        }\n        \n    } catch (error) {\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Navigation Error\"\n        });\n    }\n})();",
+                "BTTAppleScriptUsePath" : false,
+                "BTTAppleScriptRunInBackground" : true,
+                "SelectedAction" : 252,
+                "BTTScriptLocation" : 0
+              },
+              "BTTInlineAppleScript" : "(() => {\n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    const app = Application.currentApplication();\n    app.includeStandardAdditions = true;\n    \n    // Get URL from clipboard\n    const clipboardURL = app.theClipboard();\n    \n    // Check if clipboard has content\n    if (!clipboardURL) {\n        app.displayNotification(\"Clipboard is empty\", {\n            withTitle: \"Navigate to URL\"\n        });\n        return;\n    }\n    \n    // List of supported browsers\n    const browserNames = [\"Arc\", \"Safari\", \"Google Chrome\", \"Brave Browser\", \"Microsoft Edge\", \"Opera\"];\n    \n    // Function to navigate in a specific browser\n    const navigateToBrowser = (browserName) => {\n        let browser = null;\n        \n        switch(browserName) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                browser.windows[0].currentTab.url = clipboardURL;\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                browser.windows[0].activeTab.url = clipboardURL;\n                break;\n        }\n    };\n    \n    try {\n        // Check if frontmost app is a browser\n        if (browserNames.includes(frontApp)) {\n            // Active window is a browser, use it\n            navigateToBrowser(frontApp);\n            app.displayNotification(`Navigating to: ${clipboardURL}`, {\n                withTitle: \"URL from Clipboard\"\n            });\n        } else {\n            // Active window is not a browser, check for running browsers\n            const runningBrowsers = [];\n            \n            for (const browserName of browserNames) {\n                try {\n                    const browser = Application(browserName);\n                    if (browser.running()) {\n                        runningBrowsers.push(browserName);\n                    }\n                } catch (e) {\n                    // Browser not installed or not accessible, skip\n                }\n            }\n            \n            if (runningBrowsers.length === 1) {\n                // Exactly one browser is running, use it\n                navigateToBrowser(runningBrowsers[0]);\n                app.displayNotification(`Navigating in ${runningBrowsers[0]}: ${clipboardURL}`, {\n                    withTitle: \"URL from Clipboard\"\n                });\n            } else if (runningBrowsers.length === 0) {\n                app.displayNotification(\"No browser is running\", {\n                    withTitle: \"Navigate to URL\"\n                });\n            } else {\n                // Multiple browsers running\n                app.displayNotification(`Multiple browsers running (${runningBrowsers.join(\", \")}). Please focus one.`, {\n                    withTitle: \"Navigate to URL\"\n                });\n            }\n        }\n        \n    } catch (error) {\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Navigation Error\"\n        });\n    }\n})();",
+              "BTTOrder" : 3
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1764539592.715842,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "11624509-58FB-45BC-A87D-F7336DD086E6",
+          "BTTPredefinedActionType" : 203,
+          "BTTPredefinedActionName" : "Show or Hide Clipboard  or  Pasteboard History",
+          "BTTAdditionalActionData" : {
+            "BTTActionClipboardManagerAutoSaveName" : "11624509-58FB-45BC-A87D-F7336DD086E6"
+          },
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "d",
+          "BTTShortcutKeyCode" : 2,
+          "BTTShortcutAdvancedModifierKeys" : "1966123",
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTTriggerCheatSheetConfig" : {
+            "BTTCheatSheetActionLabel" : "Clipboard",
+            "BTTCheatSheetTriggerLabel" : "Meta Shortcuts"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1752248065.8571601,
+          "BTTTriggerType" : 121,
+          "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "D48DA46D-91E2-4302-874B-026C090FCBE0",
+          "BTTOrder" : 4,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1751557001.163698,
+              "BTTTriggerParentUUID" : "D48DA46D-91E2-4302-874B-026C090FCBE0",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "46BE98A0-D4B3-4FE2-92EE-760C016F3602",
+              "BTTLayoutIndependentActionChar" : "w",
+              "BTTShortcutToSend" : "55,13",
+              "BTTOrder" : 0
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0
+          },
+          "BTTTriggerCheatSheetConfig" : {
+            "BTTCheatSheetTriggerLabel" : ""
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1755392447.5751829,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "FB1998E7-0AC7-4FBF-9C9C-F72249EE3524",
+          "BTTAdditionalConfiguration" : "1966123",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "m",
+          "BTTShortcutKeyCode" : 46,
+          "BTTShortcutAdvancedModifierKeys" : "1966123",
+          "BTTShortcutModifierKeys" : 1966080,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1718733617.423079,
+              "BTTTriggerParentUUID" : "FB1998E7-0AC7-4FBF-9C9C-F72249EE3524",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+              "BTTUUID" : "5FB66DB2-3372-42D9-A92F-322EC4E28C60",
+              "BTTPredefinedActionType" : 21,
+              "BTTPredefinedActionName" : "Maximize Window",
+              "BTTShortcutKeyboardType" : 0,
+              "BTTShortcutKeyCode" : -1,
+              "BTTOrder" : 0,
+              "BTTAutoAdaptToKeyboardLayout" : 0
+            }
+          ],
+          "BTTTriggerCheatSheetConfig" : {
+            "BTTCheatSheetActionLabel" : "Windows",
+            "BTTCheatSheetTriggerLabel" : "Meta Shortcuts"
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1752248065.8571711,
+          "BTTTriggerType" : 111,
+          "BTTTriggerTypeDescriptionReadOnly" : "5 Finger Tap",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "9D565E28-0699-440D-8368-E57B30962E15",
+          "BTTOrder" : 3,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1716832690.892421,
+              "BTTTriggerParentUUID" : "9D565E28-0699-440D-8368-E57B30962E15",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "4172B73E-D477-436B-BB05-367F5C7343E2",
+              "BTTPredefinedActionType" : 289,
+              "BTTPredefinedActionName" : "Close All Notification Alerts  or  Notification Center",
+              "BTTOrder" : 0
+            },
+            {
+              "BTTLastUpdatedAt" : 1716832734.8218234,
+              "BTTTriggerParentUUID" : "9D565E28-0699-440D-8368-E57B30962E15",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "CC5D51EF-01E1-45D6-BEAB-0177BE0B6576",
+              "BTTOrder" : 1
+            }
+          ]
+        }
+      ],
+      "BTTAppSpecificSettings" : {
+        "BTTDisableGlobalTriggers" : false
+      }
+    },
+    {
+      "BTTActivationGroupName" : "Web Browsers",
+      "BTTAppName" : "Web Browsers",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 3,
+      "BTTActivationGroupCondition" : "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEDMLDBMfJzEyNTxARUZJTVFWV1piZmpvcnN2e35_goeKi4+Sl5qbnaKlpqitsLG0uby9v8FVJG51bGzTDQ4PEBESXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAy0hQPFR5aTlMub2JqZWN0c6gWFxgZGhscHYADgBSAGIAcgCGAJYApgC2AMdQPICEiIyQlJl8QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUoKSorDywtLi8wWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIqDzM0EAGAB9I2Nzg5WiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uozg6O1xOU0V4cHJlc3Npb25YTlNPYmplY3TSFA89P6E+gAmADNMPKkFCQ0RZTlNLZXlQYXRogAsQCoAKV2FwcE5hbWXSNjdHSF8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jRzo70jY3SkteTlNNdXRhYmxlQXJyYXmjSkw7V05TQXJyYXnSNjdOT18QE05TS2V5UGF0aEV4cHJlc3Npb26kTlA6O18QFE5TRnVuY3Rpb25FeHByZXNzaW9u01IqD1NUVV8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFVPcmlvbtI2N1hZXxAZTlNDb25zdGFudFZhbHVlRXhwcmVzc2lvbqNYOjvVD1tcXV5fVGBUYVpOU01vZGlmaWVyWE5TTmVnYXRlWU5TT3B0aW9uc15OU09wZXJhdG9yVHlwZYASCBAE0jY3Y2RfEBtOU0VxdWFsaXR5UHJlZGljYXRlT3BlcmF0b3KjY2U7XxATTlNQcmVkaWNhdGVPcGVyYXRvctI2N2doXxAVTlNDb21wYXJpc29uUHJlZGljYXRlo2dpO1tOU1ByZWRpY2F0ZdQPICEiI2wlboATgBWABIAX01IqD3BUVYAWgBBYVHdpbGlnaHTVD1tcXV5fVGBUYYASCNQPICEiI3gleoATgBmABIAb01IqD3xUVYAagBBTWmVu1Q9bXF1eX1RgVGGAEgjUDyAhIiOEJYaAE4AdgASAH9NSKg+IVFWAHoAQVEVkZ2XUD1uMXo1UVI5XTlNGbGFnc4AgEGPSNjeQkV8QFU5TSW5QcmVkaWNhdGVPcGVyYXRvcqOQZTvUDyAhIiOUJZaAE4AigASAJNNSKg+YVFWAI4AQVlNhZmFyadQPW4xejVRUjoAg1A8gISIjnyWhgBOAJoAEgCjTUioPo1RVgCeAEFZDaHJvbWXUD1uMXo1UVI6AINQPICEiI6olrIATgCqABIAs01IqD65UVYArgBBTQXJj1Q9bXF1eX1RgVGGAEgjUDyAhIiO2JbiAE4AugASAMNNSKg+6VFWAL4AQV0ZpcmVmb3jUD1uMXo1UVI6AINI2N0zAokw70jY3wsNfEBNOU0NvbXBvdW5kUHJlZGljYXRlo8JpOwAIABEAGgAkACkAMgA3AEkATABRAFMAiQCPAJYAsADCAMkAywDNAM8A1ADfAOgA6gDsAO4A8ADyAPQA9gD4APoBAwEXASoBQAFCAUQBRgFIAVMBXQFsAX8BiwGNAY8BkQGTAZUBogGnAakBqwGwAbsBxAHXAdsB6AHxAfYB+AH6AfwCAwINAg8CEQITAhsCIAI_AkMCSAJXAlsCYwJoAn4CgwKaAqECswK1ArcCuQK_AsQC4ALkAu8C+gMDAw0DHAMeAx8DIQMmA0QDSANeA2MDewN_A4sDlAOWA5gDmgOcA6MDpQOnA7ADuwO9A74DxwPJA8sDzQPPA9YD2APaA94D6QPrA+wD9QP3A_kD+wP9BAQEBgQIBA0EFgQeBCAEIgQnBD8EQwRMBE4EUARSBFQEWwRdBF8EZgRvBHEEegR8BH4EgASCBIkEiwSNBJQEnQSfBKgEqgSsBK4EsAS3BLkEuwS_BMoEzATNBNYE2ATaBNwE3gTlBOcE6QTxBPoE_AUBBQQFCQUfAAAAAAAAAgEAAAAAAAAAxAAAAAAAAAAAAAAAAAAABSM=",
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1769966076.1955349,
+          "BTTTriggerType" : 112,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "E1ABE9D5-E54B-4B48-B326-E51FEFBD202D",
+          "BTTOrder" : 2,
+          "BTTActionsToExecute" : [
+            {
+              "BTTActionCategory" : 3,
+              "BTTLastUpdatedAt" : 1769966095.335799,
+              "BTTTriggerParentUUID" : "E1ABE9D5-E54B-4B48-B326-E51FEFBD202D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "43070D1B-454C-4837-98B0-B8F61263965F",
+              "BTTPredefinedActionType" : 119,
+              "BTTPredefinedActionName" : "Custom Mouse Buttons & Modifiers(⌃⌥⇧⌘)",
+              "BTTCustomClickConfig" : "1001048576",
+              "BTTCustomClickUpDownConfig" : "0",
+              "BTTOrder" : 36
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1769965820.399967,
+          "BTTTriggerType" : 113,
+          "BTTTriggerTypeDescriptionReadOnly" : "TipTap Left (1 Finger Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "9BF2FD33-F719-4004-A1DD-F28F85DB09E4",
+          "BTTRepeatDelay" : 0.50984770059585571,
+          "BTTNotesInsteadOfDescription" : 1,
+          "BTTOrder" : 4,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1752100903.4878809,
+              "BTTTriggerParentUUID" : "9BF2FD33-F719-4004-A1DD-F28F85DB09E4",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "1162D60A-0410-44AE-AD6E-9C37250DABE8",
+              "BTTLayoutIndependentActionChar" : "TAB",
+              "BTTShortcutToSend" : "59,56,48",
+              "BTTOrder" : 0
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTGestureForceFeedbackPattern" : 12
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1769965830.0666831,
+          "BTTTriggerType" : 170,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger FORCE Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "97FD9EFB-1FA4-4AA9-A9AE-BC518FD0639D",
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1769965985.731487,
+              "BTTTriggerParentUUID" : "97FD9EFB-1FA4-4AA9-A9AE-BC518FD0639D",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+              "BTTUUID" : "6BBC395A-639B-4AA3-9767-7AD740C306DE",
+              "BTTPredefinedActionType" : 119,
+              "BTTPredefinedActionName" : "Custom Mouse Buttons & Modifiers(⌃⌥⇧⌘)",
+              "BTTCustomClickConfig" : "1001179648",
+              "BTTCustomClickUpDownConfig" : "0",
+              "BTTOrder" : 34
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1769965815.2675409,
+          "BTTTriggerType" : 114,
+          "BTTTriggerTypeDescriptionReadOnly" : "TipTap Right (1 Finger Fix)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "E0352056-96C5-4275-A45B-FDD9212BCCFE",
+          "BTTLayoutIndependentActionChar" : "TAB",
+          "BTTShortcutToSend" : "59,48",
+          "BTTOrder" : 3,
+          "BTTTriggerConfig" : {
+            "BTTNoTouchTimeout" : 0,
+            "BTTGestureForceFeedbackPattern" : 12
+          }
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "company.thebrowser.Browser",
+      "BTTAppName" : "Arc",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 2,
+      "BTTAppProcessName" : "Arc",
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1764435559.1137109,
+          "BTTTriggerType" : 643,
+          "BTTTriggerTypeDescriptionReadOnly" : "Named Trigger: Open Current Arc URL in archive.is",
+          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+          "BTTUUID" : "C6AE0E5A-2349-4892-9FF1-B5583C46E0EC",
+          "BTTCustomContextMenuItemConfig" : {
+
+          },
+          "BTTTriggerName" : "Open Current Arc URL in archive.is",
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764435303.234154,
+              "BTTTriggerParentUUID" : "C6AE0E5A-2349-4892-9FF1-B5583C46E0EC",
+              "BTTIsPureAction" : true,
+              "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
+              "BTTUUID" : "B31CA25D-71B9-4BAE-A803-6F2DBA591228",
+              "BTTPredefinedActionType" : 252,
+              "BTTPredefinedActionName" : "Run JavaScript for Automation (async in background)",
+              "BTTAdditionalActionData" : {
+                "BTTAppleScriptRunInBackground" : true,
+                "BTTAIScriptType" : 3,
+                "BTTScriptType" : 1,
+                "BTTAppleScriptString" : "(() => {\n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    let currentURL = \"\";\n    let browser = null;\n    \n    try {\n        switch(frontApp) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                currentURL = browser.windows[0].currentTab.url();\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            default:\n                const app = Application.currentApplication();\n                app.includeStandardAdditions = true;\n                app.displayNotification(\"Unsupported browser\", {\n                    withTitle: \"Archive.is Script\"\n                });\n                return;\n        }\n        \n        // Check if we got a URL\n        if (!currentURL || currentURL === \"\") {\n            const app = Application.currentApplication();\n            app.includeStandardAdditions = true;\n            app.displayNotification(\"Could not get URL from browser\", {\n                withTitle: \"Archive.is Script\"\n            });\n            return;\n        }\n        \n        // Construct the archive.is URL\n        const archiveURL = `https://archive.is/?run=1&url=${encodeURIComponent(currentURL)}`;\n        \n        // Replace the current tab's URL based on browser\n        switch(frontApp) {\n            case \"Arc\":\n                browser.windows[0].activeTab.url = archiveURL;\n                break;\n                \n            case \"Safari\":\n                browser.windows[0].currentTab.url = archiveURL;\n                break;\n                \n            case \"Google Chrome\":\n            case \"Brave Browser\":\n            case \"Microsoft Edge\":\n            case \"Opera\":\n                browser.windows[0].activeTab.url = archiveURL;\n                break;\n        }\n        \n        // Show notification\n        const app = Application.currentApplication();\n        app.includeStandardAdditions = true;\n        app.displayNotification(`Archiving: ${currentURL}`, {\n            withTitle: \"Archive.is\"\n        });\n        \n    } catch (error) {\n        const app = Application.currentApplication();\n        app.includeStandardAdditions = true;\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Archive.is Script Error\"\n        });\n    }\n})();",
+                "SelectedAction" : 195,
+                "BTTAppleScriptUsePath" : false,
+                "BTTScriptLocation" : 0
+              },
+              "BTTInlineAppleScript" : "(() => {\n    // Get the frontmost application\n    const systemEvents = Application(\"System Events\");\n    const frontApp = systemEvents.processes.whose({ frontmost: true })[0].name();\n    \n    let currentURL = \"\";\n    let browser = null;\n    \n    try {\n        switch(frontApp) {\n            case \"Arc\":\n                browser = Application(\"Arc\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Safari\":\n                browser = Application(\"Safari\");\n                currentURL = browser.windows[0].currentTab.url();\n                break;\n                \n            case \"Google Chrome\":\n                browser = Application(\"Google Chrome\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Brave Browser\":\n                browser = Application(\"Brave Browser\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Microsoft Edge\":\n                browser = Application(\"Microsoft Edge\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            case \"Opera\":\n                browser = Application(\"Opera\");\n                currentURL = browser.windows[0].activeTab.url();\n                break;\n                \n            default:\n                const app = Application.currentApplication();\n                app.includeStandardAdditions = true;\n                app.displayNotification(\"Unsupported browser\", {\n                    withTitle: \"Archive.is Script\"\n                });\n                return;\n        }\n        \n        // Check if we got a URL\n        if (!currentURL || currentURL === \"\") {\n            const app = Application.currentApplication();\n            app.includeStandardAdditions = true;\n            app.displayNotification(\"Could not get URL from browser\", {\n                withTitle: \"Archive.is Script\"\n            });\n            return;\n        }\n        \n        // Construct the archive.is URL\n        const archiveURL = `https://archive.is/?run=1&url=${encodeURIComponent(currentURL)}`;\n        \n        // Replace the current tab's URL based on browser\n        switch(frontApp) {\n            case \"Arc\":\n                browser.windows[0].activeTab.url = archiveURL;\n                break;\n                \n            case \"Safari\":\n                browser.windows[0].currentTab.url = archiveURL;\n                break;\n                \n            case \"Google Chrome\":\n            case \"Brave Browser\":\n            case \"Microsoft Edge\":\n            case \"Opera\":\n                browser.windows[0].activeTab.url = archiveURL;\n                break;\n        }\n        \n        // Show notification\n        const app = Application.currentApplication();\n        app.includeStandardAdditions = true;\n        app.displayNotification(`Archiving: ${currentURL}`, {\n            withTitle: \"Archive.is\"\n        });\n        \n    } catch (error) {\n        const app = Application.currentApplication();\n        app.includeStandardAdditions = true;\n        app.displayNotification(`Error: ${error.toString()}`, {\n            withTitle: \"Archive.is Script Error\"\n        });\n    }\n})();",
+              "BTTOrder" : 1
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTHUDText" : "Running Open In archive.is",
+            "BTTShowHUD" : 1
+          }
+        }
+      ]
+    },
+    {
+      "BTTActivationGroupName" : "3F Scroll",
+      "BTTAppName" : "3F Scroll",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppProcessMatchMode" : 3,
+      "BTTActivationGroupCondition" : "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBkLDBMZISssLzY6P0BDR0tQUVRcYGRpbHByVSRudWxs0w0ODxAREl8QF05TQ29tcG91bmRQcmVkaWNhdGVUeXBlXxAPTlNTdWJwcmVkaWNhdGVzViRjbGFzcxACgAKAGNIUDxUYWk5TLm9iamVjdHOiFheAA4AUgBfUDxobHB0eHyBfEBFOU1JpZ2h0RXhwcmVzc2lvbl8QEE5TTGVmdEV4cHJlc3Npb25fEBNOU1ByZWRpY2F0ZU9wZXJhdG9ygBOADoAEgBHVIiMkJQ8mJygpKllOU09wZXJhbmReTlNTZWxlY3Rvck5hbWVfEBBOU0V4cHJlc3Npb25UeXBlW05TQXJndW1lbnRzgAaABRADgAiADVx2YWx1ZUZvcktleTrSJA8tLhABgAfSMDEyM1okY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNTZWxmRXhwcmVzc2lvbqMyNDVcTlNFeHByZXNzaW9uWE5TT2JqZWN00hQPNzmhOIAJgAzTDyQ7PD0+WU5TS2V5UGF0aIALEAqACl8QD2N1c3RvbVZhcmlhYmxlNNIwMUFCXxAcTlNLZXlQYXRoU3BlY2lmaWVyRXhwcmVzc2lvbqNBNDXSMDFERV5OU011dGFibGVBcnJheaNERjVXTlNBcnJhedIwMUhJXxATTlNLZXlQYXRoRXhwcmVzc2lvbqRISjQ1XxAUTlNGdW5jdGlvbkV4cHJlc3Npb27TTCQPTU5PXxAPTlNDb25zdGFudFZhbHVlgA8QAIAQUTHSMDFSU18QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26jUjQ11Q9VVldYWU5aTltaTlNNb2RpZmllclhOU05lZ2F0ZVlOU09wdGlvbnNeTlNPcGVyYXRvclR5cGWAEggQBNIwMV1eXxAbTlNFcXVhbGl0eVByZWRpY2F0ZU9wZXJhdG9yo11fNV8QE05TUHJlZGljYXRlT3BlcmF0b3LSMDFhYl8QFU5TQ29tcGFyaXNvblByZWRpY2F0ZaNhYzVbTlNQcmVkaWNhdGXUDxobHB1mH2iAE4AVgASAFtNMJA9NTk+AD4AQ1Q9VVldYWU5uTm+AEgkQBdIwMUZxokY10jAxc3RfEBNOU0NvbXBvdW5kUHJlZGljYXRlo3NjNQAIABEAGgAkACkAMgA3AEkATABRAFMAbwB1AHwAlgCoAK8AsQCzALUAugDFAMgAygDMAM4A1wDrAP4BFAEWARgBGgEcAScBMQFAAVMBXwFhAWMBZQFnAWkBdgF7AX0BfwGEAY8BmAGrAa8BvAHFAcoBzAHOAdAB1wHhAeMB5QHnAfkB_gIdAiECJgI1AjkCQQJGAlwCYQJ4An8CkQKTApUClwKZAp4CugK+AskC1ALdAucC9gL4AvkC+wMAAx4DIgM4Az0DVQNZA2UDbgNwA3IDdAN2A30DfwOBA4wDjgOPA5EDlgOZA54DtAAAAAAAAAIBAAAAAAAAAHUAAAAAAAAAAAAAAAAAAAO4",
+      "BTTAppSpecificSettings" : {
+        "BTTDisableGlobalTriggers" : false
+      },
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}
