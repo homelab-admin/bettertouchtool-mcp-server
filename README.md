@@ -76,7 +76,7 @@ Add the server to your Claude Desktop configuration file:
         "--directory",
         "/path/to/bettertouchtool-mcp-server",
         "run",
-        "btt_mcp.py"
+        "btt-mcp-server"
       ]
     }
   }
@@ -90,7 +90,7 @@ Add the server to your Claude Desktop configuration file:
   "mcpServers": {
     "bettertouchtool": {
       "command": "/path/to/bettertouchtool-mcp-server/.venv/bin/python",
-      "args": ["/path/to/bettertouchtool-mcp-server/btt_mcp.py"]
+      "args": ["-m", "btt_mcp"]
     }
   }
 }
@@ -272,20 +272,46 @@ The CLI tool should be at:
 
 ## Development
 
+### Project Structure
+
+The codebase is organized into a modular package:
+
+```
+src/btt_mcp/
+├── server.py      # FastMCP server initialization
+├── config.py      # Constants and configuration
+├── models/        # Pydantic input models (7 files)
+├── client/        # BTT communication (HTTP + CLI)
+├── formatters/    # Output formatting
+└── tools/         # MCP tool implementations (6 files)
+```
+
+See [CLAUDE.md](CLAUDE.md) for detailed architecture documentation.
+
 ### Running locally for testing
 
 ```bash
 # With uv
-uv run btt_mcp.py
+uv run btt-mcp-server
 
 # Or directly
-python btt_mcp.py
+python -m btt_mcp
+```
+
+### Running Tests
+
+```bash
+# Run all 48 tests
+uv run pytest
+
+# With verbose output
+uv run pytest -v
 ```
 
 ### Testing with MCP Inspector
 
 ```bash
-npx @modelcontextprotocol/inspector uv --directory /path/to/project run btt_mcp.py
+npx @modelcontextprotocol/inspector uv --directory /path/to/project run btt-mcp-server
 ```
 
 ## API Reference
