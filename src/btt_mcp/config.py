@@ -8,7 +8,7 @@ import os
 # Connection Constants
 # =============================================================================
 
-DEFAULT_BTT_PORT = 12345
+DEFAULT_BTT_PORT = 56786
 DEFAULT_BTT_HOST = "127.0.0.1"
 BTT_SOCKET_PATH = "/tmp/com.hegenberg.BetterTouchTool.sock"
 
