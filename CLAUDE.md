@@ -10,7 +10,7 @@ bettertouchtool-mcp-server/
 │   └── btt_mcp/
 │       ├── __init__.py           # Package init, exports main()
 │       ├── server.py             # FastMCP server initialization
-│       ├── config.py             # Constants and configuration
+│       ├── config.py             # Constants, config file loading (YAML)
 │       ├── models/               # Pydantic input models
 │       │   ├── __init__.py       # Exports all models
 │       │   ├── common.py         # ResponseFormat, BTTConnectionConfig
@@ -159,10 +159,27 @@ uv run pytest --cov=btt_mcp
 
 ## BTT Communication
 
+### Configuration File
+
+Connection settings are loaded from `~/.config/btt-mcp/config.yml`:
+
+```yaml
+host: 127.0.0.1
+port: 56786
+shared_secret: null  # Set if BTT has shared secret configured
+use_cli: false       # Use bttcli instead of HTTP
+```
+
+The file is optional — defaults are used if it doesn't exist. See `config.py` for:
+
+- `_load_config_file()` - YAML loading with error handling
+- `get_default_*()` - Functions that read config or return defaults
+- `create_default_config()` - Creates config file with defaults
+
 ### HTTP Webserver (default)
 
 - Requires BTT webserver enabled in preferences
-- Port configurable (default: 12345)
+- Port configurable (default: 56786)
 - Optional shared secret authentication
 
 ### CLI (bttcli)

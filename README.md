@@ -201,31 +201,46 @@ Ask Claude:
 
 > "Help me understand what my 'Morning Routine' trigger does and suggest improvements"
 
-## Connection Options
+## Configuration
 
-### Default HTTP Connection
+Configuration is stored in `~/.config/btt-mcp/config.yml`. The file is created automatically with defaults on first use, or you can create it manually:
 
-By default, tools connect via HTTP to `127.0.0.1:12345`. No additional configuration needed if BTT webserver is enabled with default settings.
-
-### With Shared Secret
-
-If you've configured a shared secret in BTT, include it in your requests:
-
-```
-Use my BTT shared secret "my_secret_key" when connecting
+```yaml
+# BTT MCP Server Configuration
+host: 127.0.0.1
+port: 56786
+shared_secret: null  # Set this if you've configured a shared secret in BTT
+use_cli: false       # Set to true to use bttcli instead of HTTP
 ```
 
-Or Claude will ask if authentication fails.
+### Configuration Options
 
-### Using CLI Mode
+| Option | Default | Description |
+|--------|---------|-------------|
+| `host` | `127.0.0.1` | BTT webserver host |
+| `port` | `56786` | BTT webserver port |
+| `shared_secret` | `null` | Shared secret for authentication (if configured in BTT) |
+| `use_cli` | `false` | Use `bttcli` CLI tool instead of HTTP (faster, uses Unix socket) |
 
-For faster performance, you can use the `bttcli` command-line tool instead of HTTP:
+### Example: With Shared Secret
 
+If you've configured a shared secret in BTT preferences:
+
+```yaml
+host: 127.0.0.1
+port: 56786
+shared_secret: my_secret_key
 ```
-Use CLI mode for BTT commands
+
+### Example: Using CLI Mode
+
+For faster performance using the Unix socket:
+
+```yaml
+use_cli: true
 ```
 
-This uses the Unix socket at `/tmp/com.hegenberg.BetterTouchTool.sock` for lower latency.
+This uses the socket at `/tmp/com.hegenberg.BetterTouchTool.sock` for lower latency.
 
 ## Trigger Types
 
@@ -254,7 +269,8 @@ When filtering triggers, you can use these types:
 ### "403 Forbidden" errors
 
 You have a shared secret configured in BTT. Either:
-- Provide the secret in your request
+
+- Add `shared_secret: your_secret` to `~/.config/btt-mcp/config.yml`
 - Remove the shared secret from BTT preferences
 
 ### "bttcli not found" (CLI mode)
