@@ -5,6 +5,17 @@ Pydantic input models for BTT MCP tools.
 from btt_mcp.models.actions import TriggerActionInput, TriggerNamedInput
 from btt_mcp.models.clipboard import GetClipboardInput, SetClipboardInput
 from btt_mcp.models.common import BTTConnectionConfig, ResponseFormat
+from btt_mcp.models.floating_menus import (
+    AddFloatingMenuItemInput,
+    CreateFloatingMenuInput,
+    FloatingMenuTriggerType,
+    GetFloatingMenuInput,
+    GetFloatingMenusInput,
+    HideFloatingMenuInput,
+    ShowFloatingMenuInput,
+    ToggleFloatingMenuInput,
+    UpdateFloatingMenuInput,
+)
 from btt_mcp.models.presets import (
     DisplayNotificationInput,
     ExportPresetInput,
@@ -54,4 +65,14 @@ __all__ = [
     "GetPresetDetailsInput",
     "DisplayNotificationInput",
     "RevealElementInput",
+    # Floating Menus
+    "FloatingMenuTriggerType",
+    "GetFloatingMenusInput",
+    "GetFloatingMenuInput",
+    "CreateFloatingMenuInput",
+    "AddFloatingMenuItemInput",
+    "UpdateFloatingMenuInput",
+    "ShowFloatingMenuInput",
+    "HideFloatingMenuInput",
+    "ToggleFloatingMenuInput",
 ]

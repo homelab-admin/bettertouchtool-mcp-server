@@ -25,7 +25,7 @@ class TestBTTConnectionConfig:
     def test_default_values(self):
         config = BTTConnectionConfig()
         assert config.host == "127.0.0.1"
-        assert config.port == 12345
+        assert config.port == 56786
         assert config.shared_secret is None
         assert config.use_cli is False
 

@@ -4,7 +4,15 @@ MCP tool implementations for BTT.
 Each module registers its tools with the shared MCP server instance.
 """
 
-from btt_mcp.tools import actions, clipboard, presets, triggers, variables, widgets
+from btt_mcp.tools import (
+    actions,
+    clipboard,
+    floating_menus,
+    presets,
+    triggers,
+    variables,
+    widgets,
+)
 
 __all__ = [
     "triggers",
@@ -13,4 +21,5 @@ __all__ = [
     "widgets",
     "clipboard",
     "presets",
+    "floating_menus",
 ]

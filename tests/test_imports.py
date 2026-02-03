@@ -24,7 +24,7 @@ class TestImports:
         )
 
         assert DEFAULT_BTT_HOST == "127.0.0.1"
-        assert DEFAULT_BTT_PORT == 12345
+        assert DEFAULT_BTT_PORT == 56786
 
     def test_models_import(self):
         from btt_mcp.models import (

@@ -30,7 +30,7 @@ First, enable the BetterTouchTool webserver:
 1. Open BetterTouchTool
 2. Go to **Preferences** → **Advanced** → **Webserver**
 3. Check **Enable Webserver**
-4. Note the port (default: `12345`)
+4. Note the port (default: `56786`)
 5. Optionally set a **Shared Secret** for authentication
 
 ### 2. Install the MCP Server

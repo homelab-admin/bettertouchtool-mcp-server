@@ -14,12 +14,12 @@ class TestBuildUrl:
     def test_basic_url(self):
         config = BTTConnectionConfig()
         url = build_url("get_triggers", {}, config)
-        assert url == "http://127.0.0.1:12345/get_triggers/"
+        assert url == "http://127.0.0.1:56786/get_triggers/"
 
     def test_url_with_params(self):
         config = BTTConnectionConfig()
         url = build_url("get_triggers", {"trigger_id": 643}, config)
-        assert url == "http://127.0.0.1:12345/get_triggers/?trigger_id=643"
+        assert url == "http://127.0.0.1:56786/get_triggers/?trigger_id=643"
 
     def test_url_with_shared_secret(self):
         config = BTTConnectionConfig(shared_secret="secret123")
