@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
 import asyncio
-import json
 import sys
 
 sys.path.insert(0, 'src')
 
 from btt_mcp.client import btt_request
-from btt_mcp.formatters import format_floating_menus_list
 from btt_mcp.models import BTTConnectionConfig
 
 
 async def test():
     config = BTTConnectionConfig()
-    result = await btt_request('get_triggers', {'trigger_id': 767}, config)
-    print(f'Raw result: {repr(result)}')
-
-    menus = json.loads(result)
-    print(f'Parsed menus: {menus}')
-
-    formatted = format_floating_menus_list(menus)
-    print('Formatted output:')
-    print(formatted)
+    result = await btt_request('get_clipboard_content', {'format': 'public.utf8-plain-text'}, config)
+    print(f'Raw result repr: {repr(result)}')
+    print(f'Raw result len: {len(result) if result else 0}')
+    print(f'Bool of result: {bool(result)}')
 
 asyncio.run(test())

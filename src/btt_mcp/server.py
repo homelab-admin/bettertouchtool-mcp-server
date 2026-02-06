@@ -2,6 +2,8 @@
 MCP Server initialization and entry point.
 """
 
+import sys
+
 from mcp.server.fastmcp import FastMCP
 
 # Initialize the MCP server - this is imported by tool modules
@@ -14,6 +16,7 @@ def main():
     # This must happen before mcp.run()
     import btt_mcp.tools  # noqa: F401
 
+    print("BTT MCP Server starting...", file=sys.stderr)
     mcp.run()
 
 
