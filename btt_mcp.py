@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
-BetterTouchTool MCP Server - Legacy Entry Point
-
-This file is kept for backwards compatibility only.
-The actual implementation is in src/btt_mcp/
+BetterTouchTool MCP Server - Entry Point
 
 Usage:
     python btt_mcp.py

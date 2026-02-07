@@ -34,7 +34,11 @@ class TriggerActionInput(BaseModel):
 
     action_json: str = Field(
         ...,
-        description="JSON definition of the action to trigger (copy from BTT via right-click -> Copy JSON)",
+        description=(
+            'JSON definition of the action to trigger. Must include BTTPredefinedActionType (int). '
+            'Example: {"BTTPredefinedActionType": 49, "BTTLaunchPath": "/Applications/Safari.app"} '
+            "to launch an app. Use btt_lookup_reference for action type IDs and parameters."
+        ),
     )
     wait_for_reply: bool = Field(
         default=False,

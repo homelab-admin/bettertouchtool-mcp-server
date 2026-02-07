@@ -9,6 +9,7 @@ from btt_mcp.tools import (
     clipboard,
     floating_menus,
     presets,
+    reference,
     triggers,
     variables,
     widgets,
@@ -22,4 +23,5 @@ __all__ = [
     "clipboard",
     "presets",
     "floating_menus",
+    "reference",
 ]

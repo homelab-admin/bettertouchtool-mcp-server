@@ -160,8 +160,27 @@ async def btt_list_named_triggers(params: ListNamedTriggersInput) -> str:
 async def btt_add_trigger(params: AddTriggerInput) -> str:
     """Add a new trigger to BetterTouchTool.
 
-    The trigger definition should be in JSON format. You can get
-    the format by copying an existing trigger's JSON in BTT.
+    IMPORTANT: Use btt_lookup_reference to get full documentation on trigger types,
+    action IDs, and JSON format before constructing trigger_json.
+
+    Every trigger requires BTTTriggerType (int) and BTTTriggerClass (string).
+    Actions go in BTTActionsToExecute array with BTTPredefinedActionType.
+
+    Common trigger examples:
+
+    Named trigger (type 643):
+      {"BTTTriggerType": 643, "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
+       "BTTTriggerName": "my_trigger_name",
+       "BTTActionsToExecute": [{"BTTPredefinedActionType": 49,
+       "BTTLaunchPath": "/Applications/Safari.app"}]}
+
+    Keyboard shortcut (type 0):
+      {"BTTTriggerType": 0, "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+       "BTTShortcutKeyCode": 49, "BTTShortcutModifierKeys": 1048576,
+       "BTTActionsToExecute": [{"BTTPredefinedActionType": 45}]}
+
+    Modifier keys: Cmd=1048576, Opt=524288, Ctrl=262144, Shift=131072, Fn=8388608
+    Combine with addition: Cmd+Shift = 1048576 + 131072 = 1179648
 
     Args:
         params: Contains the trigger JSON definition and optional parent UUID.

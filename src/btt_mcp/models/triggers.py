@@ -72,7 +72,13 @@ class AddTriggerInput(BaseModel):
 
     trigger_json: str = Field(
         ...,
-        description="JSON definition of the new trigger (copy format from existing trigger)",
+        description=(
+            "JSON definition of the trigger. Must include BTTTriggerType (int) and "
+            "BTTTriggerClass (string). For named triggers: BTTTriggerType=643, "
+            'BTTTriggerClass="BTTTriggerTypeOtherTriggers", and BTTTriggerName is required. '
+            "Actions go in BTTActionsToExecute array. Use btt_lookup_reference for "
+            "full trigger type IDs and JSON format documentation."
+        ),
     )
     parent_uuid: Optional[str] = Field(
         default=None,
@@ -97,7 +103,11 @@ class UpdateTriggerInput(BaseModel):
     )
     update_json: str = Field(
         ...,
-        description="JSON with the properties to update",
+        description=(
+            "JSON with the properties to update on the trigger. Only include fields "
+            "you want to change. Example: to rename a named trigger, provide "
+            '{"BTTTriggerName": "new_name"}. Use btt_lookup_reference for field names.'
+        ),
     )
     connection: BTTConnectionConfig = Field(
         default_factory=BTTConnectionConfig,

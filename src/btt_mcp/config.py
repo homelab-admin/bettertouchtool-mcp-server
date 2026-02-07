@@ -133,7 +133,7 @@ TRIGGER_TYPES = {
     "magic_mouse": "BTTTriggerTypeMagicMouse",
     "touch_bar": "BTTTriggerTypeTouchBar",
     "siri_remote": "BTTTriggerTypeSiriRemote",
-    "named": "BTTTriggerTypeOther",
+    "named": "BTTTriggerTypeOtherTriggers",
     "stream_deck": "BTTTriggerTypeStreamDeck",
     "floating_menu": "BTTTriggerTypeFloatingMenu",
     "notch_bar": "BTTTriggerTypeNotchBar",

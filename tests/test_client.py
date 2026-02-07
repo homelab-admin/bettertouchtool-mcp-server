@@ -44,7 +44,7 @@ class TestConfig:
     def test_trigger_types(self):
         assert "keyboard_shortcut" in TRIGGER_TYPES
         assert TRIGGER_TYPES["keyboard_shortcut"] == "BTTTriggerTypeKeyboardShortcut"
-        assert TRIGGER_TYPES["named"] == "BTTTriggerTypeOther"
+        assert TRIGGER_TYPES["named"] == "BTTTriggerTypeOtherTriggers"
 
     def test_named_trigger_id(self):
         assert NAMED_TRIGGER_ID == 643
