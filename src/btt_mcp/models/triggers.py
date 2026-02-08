@@ -35,7 +35,7 @@ class GetTriggersInput(BaseModel):
         description="Get triggers for a specific app (e.g., 'com.apple.Safari')",
     )
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
+        default="markdown",
         description="Output format: 'markdown' for human-readable or 'json' for raw data",
     )
     connection: BTTConnectionConfig = Field(
@@ -56,7 +56,7 @@ class GetTriggerInput(BaseModel):
         max_length=36,
     )
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
+        default="markdown",
         description="Output format: 'markdown' for human-readable or 'json' for raw data",
     )
     connection: BTTConnectionConfig = Field(
@@ -155,8 +155,7 @@ class ListNamedTriggersInput(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
-        description="Output format: 'markdown' for human-readable or 'json' for raw data",
+        default="markdown",
     )
     connection: BTTConnectionConfig = Field(
         default_factory=BTTConnectionConfig,

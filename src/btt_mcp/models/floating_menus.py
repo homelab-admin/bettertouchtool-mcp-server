@@ -10,7 +10,6 @@ Note: In BTT JSON, special prefixes are used:
 - BTTMenuItem = § (used for menu item properties)
 """
 
-from enum import IntEnum
 from typing import Optional
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -19,12 +18,15 @@ from btt_mcp.models.common import BTTConnectionConfig, ResponseFormat
 
 # =============================================================================
 # Floating Menu Constants
+#
+# These are plain int constants instead of IntEnum to avoid $ref in JSON schema.
+# VS Code Copilot cannot resolve $ref references in tool parameter schemas.
+# See: https://github.com/microsoft/vscode/issues/286179
 # =============================================================================
 
 
-class FloatingMenuTriggerType(IntEnum):
-    """Trigger types for floating menu elements."""
-
+# Trigger types for floating menu elements
+class FloatingMenuTriggerType:
     MENU = 767  # Top-level floating menu
     STANDARD_ITEM = 773  # Button with actions
     SUBMENU = 774  # Contains nested items
@@ -39,17 +41,15 @@ class FloatingMenuTriggerType(IntEnum):
     FLOATING_MENU_REFERENCE = 811
 
 
-class PositioningType(IntEnum):
-    """Menu positioning types."""
-
+# Menu positioning types
+class PositioningType:
     FREE_MOVE = 0
     FIXED_POSITION = 1
     MENUBAR_STATUS_ITEM = 2
 
 
-class PositionRelativeTo(IntEnum):
-    """What to position the menu relative to."""
-
+# What to position the menu relative to
+class PositionRelativeTo:
     FOCUSED_WINDOW = 0
     SCREEN_WITH_MOUSE = 1
     FOCUSED_SCREEN = 3
@@ -64,9 +64,8 @@ class PositionRelativeTo(IntEnum):
     DOCK = 23
 
 
-class AnchorPosition(IntEnum):
-    """Anchor positions for menu and relation."""
-
+# Anchor positions for menu and relation
+class AnchorPosition:
     TOP_LEFT = 0
     TOP_RIGHT = 1
     BOTTOM_LEFT = 2
@@ -78,9 +77,8 @@ class AnchorPosition(IntEnum):
     LEFT_EDGE_CENTER = 8
 
 
-class LayoutDirection(IntEnum):
-    """Menu layout direction options."""
-
+# Menu layout direction options
+class LayoutDirection:
     FILL_ROW = 0
     FILL_COLUMN = 1
     FILL_ROW_FIXED = 2
@@ -92,9 +90,8 @@ class LayoutDirection(IntEnum):
     CIRCULAR = 8
 
 
-class WindowLevel(IntEnum):
-    """Window level options."""
-
+# Window level options
+class WindowLevel:
     NORMAL = 0
     FLOATING = 3
     DOCK = 20
@@ -102,16 +99,14 @@ class WindowLevel(IntEnum):
     CUSTOM = -1
 
 
-class Visibility(IntEnum):
-    """When to show the menu."""
-
+# When to show the menu
+class Visibility:
     ON_LAUNCH = 0
     VIA_ACTION = 1
 
 
-class BackgroundType(IntEnum):
-    """Background/icon type options."""
-
+# Background/icon type options
+class BackgroundType:
     NONE = 0
     DATA = 1
     SF_SYMBOL = 2
@@ -123,9 +118,8 @@ class BackgroundType(IntEnum):
     INTERNAL = 8
 
 
-class IconPosition(IntEnum):
-    """Icon position options."""
-
+# Icon position options
+class IconPosition:
     LEFT = 0
     TOP = 1
     RIGHT = 2
@@ -149,7 +143,7 @@ class GetFloatingMenusInput(BaseModel):
         description="Get floating menus for a specific app (e.g., 'com.apple.Safari')",
     )
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
+        default="markdown",
         description="Output format: 'markdown' or 'json'",
     )
     connection: BTTConnectionConfig = Field(
@@ -170,7 +164,7 @@ class GetFloatingMenuInput(BaseModel):
         max_length=36,
     )
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
+        default="markdown",
         description="Output format: 'markdown' or 'json'",
     )
     connection: BTTConnectionConfig = Field(

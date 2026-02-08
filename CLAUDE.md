@@ -13,7 +13,7 @@ bettertouchtool-mcp-server/
 │       ├── config.py             # Constants, config file loading (YAML)
 │       ├── models/               # Pydantic input models
 │       │   ├── __init__.py       # Exports all models
-│       │   ├── common.py         # ResponseFormat, BTTConnectionConfig
+│       │   ├── common.py         # ResponseFormat (Literal), BTTConnectionConfig
 │       │   ├── triggers.py       # Trigger CRUD models
 │       │   ├── actions.py        # Action triggering models
 │       │   ├── variables.py      # Variable get/set models
@@ -71,6 +71,10 @@ config.py (constants)
 2. **Shared MCP instance**: `server.py` exports `mcp` which all tool modules import
 3. **Two communication methods**: HTTP (webserver) and CLI (bttcli via Unix socket)
 4. **Pydantic models**: All tool inputs use Pydantic for validation and documentation
+5. **Literal types over Enums**: Use `typing.Literal` instead of `Enum`/`IntEnum` for
+   tool parameter types. VS Code Copilot cannot resolve `$ref` references in JSON
+   schemas that Pydantic generates for Enum types, causing silent tool invocation
+   failures. See: <https://github.com/microsoft/vscode/issues/286179>
 
 ## Development
 
@@ -239,7 +243,7 @@ if result.startswith("Error:"):
 Tools with `response_format` parameter support both JSON and Markdown:
 
 ```python
-if params.response_format == ResponseFormat.JSON:
+if params.response_format == "json":
     return result
 
 try:

@@ -1,489 +1,107 @@
-[Font Settings](https://docs.folivora.ai/docs/1109_cli.html#)
-
-## Overview
-
-BetterTouchTool provides a Unix socket server that allows external applications to communicate with BTT through the socket at `/tmp/com.hegenberg.BetterTouchTool.sock`. The `bttcli` tool is a command-line interface that communicates with this socket server.
-
-**The Command Line / Socket Server support needs to be enabled in the BetterTouchTool Scripting Settings first**
-
-## Socket Server Details
-
-- **Socket Path**: `/tmp/com.hegenberg.BetterTouchTool.sock`
-- **Protocol**: Unix domain socket
-- **Security**:
-  - Socket server must be enabled in BTT preferences (`BTTSocketServer` setting)
-  - Optional shared secret authentication
-  - Socket permissions set to 0666 for accessibility
-
-![alt text](https://docs.folivora.ai/docs/media/cli_preset_selection.png)![alt text](https://docs.folivora.ai/docs/media/cli_keyboard_shortcuts.png)
-
-## Usage Examples
-
-Using the bttcli tool:
-
-```bash
-# Get clipboard content
-bttcli get_clipboard_content
-
-# Set a variable
-bttcli set_string_variable variableName=myVar to="Hello World"
-
-# Get a variable
-bttcli get_number_variable variableName=myVar
-
-# Trigger a named trigger
-bttcli trigger_named "MyTriggerName"
-
-# Display a notification
-bttcli display_notification "Hello from BTT" title="Notification Title"
-
-# Check if an app is running
-bttcli is_app_running "Safari"
-
-# Update a Touch BarreadFile widget
-bttcli update_touch_bar_widget "widget-uuid-here" text="New Text"
-
-# Get selected text
-bttcli get_selection
-
-# Set multiple clipboard formats
-bttcli set_clipboard_contents contents='["Hello","<b>Hello</b>"]' formats='["public.plain-text","public.html"]'
-
-# Execute ChatGPT query
-bttcli chat_gpt user="What is the weather like?" identifier="weather-conversation"
-```
-
-## Command Format
-
-Commands are sent as HTTP-style requests to the socket server:
-
-```
-/<command_name>/?param1=value1&param2=value2
-```
-
-## Supported Commands
-
-### 1\. get\_selection
-
-Retrieves the currently selected text or content.
-
-- **Parameters**:
-  - `type` / `content` / `format`: Pasteboard type (default: `NSPasteboardTypeString`)
-    - Supported types: `NSPasteboardTypeString`, `NSPasteboardTypeTIFF`, `NSPasteboardTypePNG`, `NSPasteboardTypeRTF`, `NSPasteboardTypeRTFD`, `NSPasteboardTypeHTML`, `NSPasteboardTypeTabularText`, `NSPasteboardTypeFont`, `NSPasteboardTypeRuler`, `NSPasteboardTypeColor`, `NSPasteboardTypeSound`, `NSPasteboardTypeMultipleTextSelection`, `NSPasteboardTypeTextFinderOptions`, `NSPasteboardTypeURL`, `NSPasteboardTypeFileURL`
-  - `asBase64` / `asbase64`: Return content as base64 encoded (boolean)
-
-### 2\. get\_clipboard\_content
-
-Gets the current clipboard content.
-
-- **Parameters**:
-  - `type` / `content` / `format`: Pasteboard type (same as get\_selection)
-  - `asBase64` / `asbase64`: Return content as base64 encoded (boolean)
-  - `excludeConcealed`: Exclude concealed / sensitive items - return empty string instead.
-
-### 3\. set\_clipboard\_content
-
-Sets the clipboard content.
-
-- **Parameters**:
-  - `content` / `text`: The content to set
-  - `format`: The format/type to use
-
-### 4\. set\_clipboard\_contents
-
-Sets multiple clipboard content types at once.
-
-- **Parameters**:
-  - `contents`: Array of content items
-  - `formats`: Array of format types
-
-### 5\. is\_app\_running
-
-Checks if an application is running.
-
-- **Parameters**:
-  - `app`: App name or bundle identifier
-
-### 6\. display\_notification
-
-Shows a system notification.
-
-- **Parameters**:
-  - `""` (unnamed): Notification body
-  - `title`: Notification title
-  - `subTitle`: Notification subtitle
-  - `soundName`: Sound to play
-  - `imagePath`: Path to notification image
-
-### 7\. get\_dock\_badge\_for
-
-Gets the badge count for a dock item.
-
-- **Parameters**:
-  - `app`: App name
-  - `update_interval`: How often to check (minimum 0.5 seconds)
-
-### 8\. get\_active\_touch\_bar\_group
-
-Returns the currently active Touch Bar group name.
-
-- **Parameters**: None
-
-### 9\. is\_true\_tone\_enabled
-
-Checks if True Tone is enabled.
-
-- **Parameters**: None
-
-### 10\. get\_location
-
-Gets the current location.
-
-- **Parameters**:
-  - `format`: Output format (default: `{LAT},{LON}`)
-
-### 11\. get\_weather
-
-Gets weather information for a location.
-
-- **Parameters**:
-  - `location`: Location coordinates or "auto" for current location
-  - `unit`: Temperature unit ("fahrenheit" or default celsius)
-
-### 12\. set\_persistent\_string\_variable
-
-Sets a persistent string variable that survives BTT restarts.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `to`: Value to set
-
-### 13\. set\_string\_variable
-
-Sets a temporary string variable.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `to`: Value to set
-
-### 14\. set\_persistent\_number\_variable
-
-Sets a persistent number variable.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `to`: Numeric value to set
-
-### 15\. set\_number\_variable
-
-Sets a temporary number variable.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `to`: Numeric value to set
-
-Special variables:
-
-- `BTTDisabled`: Enable/disable BTT
-- `BTTSiriRemoteMouseModeActive`: Toggle Siri Remote mouse mode
-- `SystemDoNotDisturbState`: Toggle Do Not Disturb
-- `BluetoothConnectionState-<address>`: Connect/disconnect Bluetooth devices
-- `CurrentDisplayBrightness`: Set current display brightness
-- `BuiltInDisplayBrightness`: Set built-in display brightness
-- `OutputVolume`: Set output volume
-
-### 16\. get\_number\_variable
-
-Gets a number variable value.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `default`: Default value if variable doesn't exist
-
-Special variables:
-
-- `BTTIdleTime`: System idle time in seconds
-- `BTTDisabled`: BTT disabled state
-- `SystemDoNotDisturbState`: Do Not Disturb state
-- `BluetoothConnectionState-<address>`: Bluetooth device connection state
-- `CurrentDisplayBrightness`: Current display brightness
-- `BuiltInDisplayBrightness`: Built-in display brightness
-- `ActiveSpace`: Active Space ID
-- `OutputVolume`: Current output volume
-
-### 17\. get\_string\_variable
-
-Gets a string variable value.
-
-- **Parameters**:
-  - `variableName` / `variable_name`: Variable name
-  - `default`: Default value if variable doesn't exist
-
-Special variables:
-
-- `BTTActiveWindowTitle`: Current window title
-- `BTTActiveWindowNumber`: Current window number
-- `BTTCurrentlyPlaying` / `BTTNowPlaying*`: Now playing information
-- `clipboard_content`: Current clipboard content
-- `hovered_link`: Currently hovered link
-- `selected_text`: Currently selected text
-
-### 18\. reveal\_element\_in\_ui
-
-Reveals an element in the BTT UI.
-
-- **Parameters**:
-  - `uuid`: UUID of the element to reveal
-
-### 19\. paste\_text
-
-Pastes text by simulating keyboard input or clipboard paste.
-
-- **Parameters**:
-  - `text` / `text_to_paste`: Text to paste
-  - `format`: Format type
-  - `insert_by_pasting`: Use paste instead of typing (boolean)
-  - `move_cursor_left_by_x_after_pasting`: Move cursor left after pasting
-
-### 20\. get\_menu\_item\_value / get\_floating\_menu\_item\_value
-
-Gets the value of a menu item.
-
-- **Parameters**:
-  - `uuid`: Item UUID
-  - `menu_name`: Menu name (if not using UUID)
-  - `item_name`: Item name (if not using UUID)
-  - `itemUUID` / `item_uuid`: Alternative UUID parameter
-
-### 21\. set\_menu\_item\_value
-
-Sets the value of a menu item.
-
-- **Parameters**:
-  - `uuid`: Item UUID
-  - `menu_name`: Menu name
-  - `item_name`: Item name
-  - `value`: Value to set
-
-### 22\. update\_menu\_item / update\_floating\_menu\_item
-
-Updates a menu item with JSON configuration.
-
-- **Parameters**:
-  - `uuid`: Item UUID
-  - `menu_name`: Menu name
-  - `item_name`: Item name
-  - `json`: JSON configuration
-  - `persist`: Save changes permanently (boolean)
-
-### 23\. webview\_menu\_item\_load\_html\_url\_js
-
-Loads HTML/URL or executes JavaScript in a WebView menu item.
-
-- **Parameters**:
-  - `uuid`: Item UUID
-  - `menu_name`: Menu name
-  - `item_name`: Item name
-  - `html_or_url`: HTML content or URL to load
-  - `javascript_to_execute`: JavaScript to execute
-  - `useragent`: Custom user agent
-
-### 24\. trigger\_action
-
-Triggers an action.
-
-- **Parameters**:
-  - `json`: JSON configuration of the action to trigger
-
-### 25\. execute\_assigned\_actions\_for\_trigger
-
-Executes all actions assigned to a trigger.
-
-- **Parameters**:
-  - `uuid`: Trigger UUID
-
-### 26\. trigger\_named
-
-Triggers a named trigger and waits for completion.
-
-- **Parameters**:
-  - `trigger_name`: Trigger name
-  - `cancel_delayed`: Cancel any delayed execution (boolean)
-
-### 27\. trigger\_named\_async\_without\_response
-
-Triggers a named trigger without waiting for response.
-
-- **Parameters**:
-  - `trigger_name`: Trigger name
-  - `delay`: Delay in seconds before triggering
-  - `cancel_delayed`: Cancel any delayed execution (boolean)
-
-### 28\. cancel\_delayed\_named\_trigger\_execution
-
-Cancels a delayed named trigger execution.
-
-- **Parameters**:
-  - `trigger_name`: Trigger name
-
-### 29\. run\_shortcut
-
-Runs an Apple Shortcuts shortcut.
-
-- **Parameters**:
-  - `shortcut_name`: Shortcut name
-  - `input` / `shortcut_input`: Input to pass to shortcut
-
-### 30\. chat\_gpt
-
-Sends a request to ChatGPT.
-
-- **Parameters**:
-  - `identifier`: Conversation identifier
-  - `input`: Input text
-  - `user`: User prompt
-  - `system`: System prompt (default: helpful assistant)
-  - `maxHistory`: Maximum conversation history
-  - `model`: GPT model to use (default: gpt-4o-mini)
-  - `apiKey`: Custom API key
-  - `customURL`: Custom API URL
-
-### 31\. get\_trigger
-
-Gets details for a specific trigger.
-
-- **Parameters**:
-  - `uuid`: Trigger UUID
-
-### 32\. get\_triggers
-
-Gets multiple triggers based on criteria.
-
-- **Parameters**:
-  - `trigger_uuid`: Specific trigger UUID
-  - `trigger_type`: Type of trigger
-  - `trigger_id`: Trigger ID
-  - `return_only_if_modifiers_match`: Only return if modifiers match (boolean)
-  - `trigger_parent_uuid`: Parent trigger UUID
-  - `trigger_app_bundle_identifier`: App bundle identifier
-  - `preset`: Preset name
-
-### 33\. add\_new\_trigger
-
-Adds a new trigger.
-
-- **Parameters**:
-  - `json`: JSON configuration of the trigger
-
-### 34\. delete\_trigger
-
-Deletes a trigger.
-
-- **Parameters**:
-  - `uuid`: Trigger UUID
-
-### 35\. delete\_triggers
-
-Deletes multiple triggers.
-
-- **Parameters**:
-  - `trigger_uuid`: Specific trigger UUID
-  - `trigger_type`: Type of trigger
-  - `trigger_id`: Trigger ID
-  - `return_only_if_modifiers_match`: Only if modifiers match
-  - `trigger_parent_uuid`: Parent trigger UUID
-  - `trigger_app_bundle_identifier`: App bundle identifier
-  - `preset`: Preset name
-
-### 36\. update\_trigger
-
-Updates a trigger configuration.
-
-- **Parameters**:
-  - `uuid`: Trigger UUID
-  - `trigger_parent_uuid`: Parent UUID
-  - `json`: JSON configuration
-
-### 37\. get\_preset\_details
-
-Gets details about a preset.
-
-- **Parameters**:
-  - `name`: Preset name
-
-### 38\. import\_preset
-
-Imports a preset from file.
-
-- **Parameters**:
-  - `path`: Path to preset file
-  - `replaceExisting`: Replace if exists (boolean, default: true)
-
-### 39\. export\_preset
-
-Exports a preset to file.
-
-- **Parameters**:
-  - `name`: Preset name
-  - `compress`: Compress output (boolean)
-  - `includeSettings`: Include settings (boolean)
-  - `outputPath`: Output file path
-  - `comment`: Export comment
-  - `link`: Associated link
-  - `minimumVersion`: Minimum BTT version
-
-### 40\. refresh\_widget
-
-Refreshes a Touch Bar widget.
-
-- **Parameters**:
-  - `uuid`: Widget UUID
-
-### 41\. update\_touch\_bar\_widget
-
-Updates Touch Bar widget content.
-
-- **Parameters**:
-  - `""` (unnamed): Widget UUID
-  - Various widget-specific parameters in the args dictionary
-
-### 42\. update\_stream\_deck\_widget
-
-Updates Stream Deck widget content.
-
-- **Parameters**:
-  - `""` (unnamed): Widget UUID
-  - `text`: Text to display
-  - `json`: JSON configuration
-
-### 43\. update\_menubar\_item
-
-Updates menu bar item.
-
-- **Parameters**:
-  - `""` (unnamed): Item UUID
-  - Various item-specific parameters in the args dictionary
-
-### 44\. get\_menu\_item\_details
-
-Gets detailed status of a menu item.
-
-- **Parameters**:
-  - `itemPath`: Menu item path
-
-### 45\. get\_menu\_item\_value\_objc / get\_floating\_menu\_item\_value\_objc
-
-Gets menu item value (Objective-C version, returns raw value).
-
-- **Parameters**: Same as `get_menu_item_value`
-
-## Security Notes
-
-1. The socket server must be explicitly enabled in BTT preferences
-2. An optional shared secret can be configured for authentication
-3. The `import_preset` command shows a security warning unless the user has opted to always allow imports
-4. External scripting must be enabled for non-webserver requests
-
-# results matching ""
-
-# No results matching ""
+---
+noteId: "44437880046011f1b0d475b0778c2e69"
+tags: []
+
+---
+
+# BTT CLI / Socket Server Reference
+
+Socket: `/tmp/com.hegenberg.BetterTouchTool.sock` (must enable in BTT Scripting Settings).
+Command format: `/<command>/?param1=value1&param2=value2`
+CLI tool: `bttcli <command> [params]`
+
+## Clipboard & Selection
+
+| Command | Key Params | Notes |
+|---|---|---|
+| `get_selection` | `type` (pasteboard type, default `NSPasteboardTypeString`), `asBase64` | Gets selected text/content |
+| `get_clipboard_content` | `type`, `asBase64`, `excludeConcealed` | Gets clipboard |
+| `set_clipboard_content` | `content`/`text`, `format` | Sets single clipboard type |
+| `set_clipboard_contents` | `contents` (array), `formats` (array) | Sets multiple clipboard types |
+
+Pasteboard types: `NSPasteboardTypeString`, `NSPasteboardTypeTIFF`, `NSPasteboardTypePNG`, `NSPasteboardTypeRTF`, `NSPasteboardTypeHTML`, `NSPasteboardTypeURL`, `NSPasteboardTypeFileURL`, plus `RTFD`, `TabularText`, `Font`, `Ruler`, `Color`, `Sound`, `MultipleTextSelection`, `TextFinderOptions`.
+
+## Variables
+
+| Command | Key Params |
+|---|---|
+| `set_string_variable` | `variableName`, `to` |
+| `set_persistent_string_variable` | `variableName`, `to` (survives restart) |
+| `set_number_variable` | `variableName`, `to` |
+| `set_persistent_number_variable` | `variableName`, `to` (survives restart) |
+| `get_string_variable` | `variableName`, `default` |
+| `get_number_variable` | `variableName`, `default` |
+
+### Special writable number variables
+`BTTDisabled`, `BTTSiriRemoteMouseModeActive`, `SystemDoNotDisturbState`, `BluetoothConnectionState-<addr>`, `CurrentDisplayBrightness`, `BuiltInDisplayBrightness`, `OutputVolume`
+
+### Special readable number variables
+`BTTIdleTime`, `BTTDisabled`, `SystemDoNotDisturbState`, `BluetoothConnectionState-<addr>`, `CurrentDisplayBrightness`, `BuiltInDisplayBrightness`, `ActiveSpace`, `OutputVolume`
+
+### Special readable string variables
+`BTTActiveWindowTitle`, `BTTActiveWindowNumber`, `BTTCurrentlyPlaying`, `BTTNowPlaying*`, `clipboard_content`, `hovered_link`, `selected_text`
+
+## Triggers & Actions
+
+| Command | Key Params |
+|---|---|
+| `trigger_named` | `trigger_name`, `cancel_delayed` — sync, waits for result |
+| `trigger_named_async_without_response` | `trigger_name`, `delay`, `cancel_delayed` — async |
+| `cancel_delayed_named_trigger_execution` | `trigger_name` |
+| `trigger_action` | `json` (action JSON definition) |
+| `execute_assigned_actions_for_trigger` | `uuid` |
+| `get_trigger` | `uuid` |
+| `get_triggers` | `trigger_uuid`, `trigger_type`, `trigger_id`, `trigger_parent_uuid`, `trigger_app_bundle_identifier`, `preset`, `return_only_if_modifiers_match` |
+| `add_new_trigger` | `json` (trigger JSON) |
+| `update_trigger` | `uuid`, `json`, `trigger_parent_uuid` |
+| `delete_trigger` | `uuid` |
+| `delete_triggers` | Same filters as `get_triggers` |
+
+## UI & Widgets
+
+| Command | Key Params |
+|---|---|
+| `display_notification` | `""` (body), `title`, `subTitle`, `soundName`, `imagePath` |
+| `paste_text` | `text`, `format`, `insert_by_pasting`, `move_cursor_left_by_x_after_pasting` |
+| `reveal_element_in_ui` | `uuid` |
+| `refresh_widget` | `uuid` |
+| `update_touch_bar_widget` | `""` (uuid), plus widget-specific params |
+| `update_stream_deck_widget` | `""` (uuid), `text`, `json` |
+| `update_menubar_item` | `""` (uuid), plus item-specific params |
+
+## Floating Menus
+
+| Command | Key Params |
+|---|---|
+| `get_menu_item_value` / `get_floating_menu_item_value` | `uuid` or (`menu_name` + `item_name`) |
+| `set_menu_item_value` | `uuid`/`menu_name`+`item_name`, `value` |
+| `update_menu_item` / `update_floating_menu_item` | `uuid`/`menu_name`+`item_name`, `json`, `persist` |
+| `get_menu_item_details` | `itemPath` |
+| `webview_menu_item_load_html_url_js` | `uuid`/`menu_name`+`item_name`, `html_or_url`, `javascript_to_execute`, `useragent` |
+
+## Presets
+
+| Command | Key Params |
+|---|---|
+| `get_preset_details` | `name` |
+| `import_preset` | `path`, `replaceExisting` (default true) |
+| `export_preset` | `name`, `compress`, `includeSettings`, `outputPath`, `comment`, `link`, `minimumVersion` |
+
+## Other
+
+| Command | Key Params |
+|---|---|
+| `is_app_running` | `app` (name or bundle ID) |
+| `get_dock_badge_for` | `app`, `update_interval` (min 0.5s) |
+| `get_active_touch_bar_group` | (none) |
+| `is_true_tone_enabled` | (none) |
+| `get_location` | `format` (default `{LAT},{LON}`) |
+| `get_weather` | `location` ("auto" or coords), `unit` ("fahrenheit" or celsius) |
+| `run_shortcut` | `shortcut_name`, `input` (Apple Shortcuts) |
+| `chat_gpt` | `identifier`, `user`, `system`, `input`, `maxHistory`, `model` (default gpt-4o-mini), `apiKey`, `customURL` |
+
+## Security
+- Socket server must be explicitly enabled in BTT preferences
+- Optional shared secret for auth
+- `import_preset` shows security warning unless user opted to always allow
+- External scripting must be enabled for non-webserver requests

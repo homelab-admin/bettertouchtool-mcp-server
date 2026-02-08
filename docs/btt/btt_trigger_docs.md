@@ -1,757 +1,113 @@
 ---
-noteId: "251d758003a911f195097f428eb1002c"
+noteId: "6f0b9e80046011f1b0d475b0778c2e69"
 tags: []
 
 ---
 
-[Font Settings](https://docs.folivora.ai/docs/2002_trigger_json.html#)
+# BTT Trigger JSON Reference
 
-AA
-
-SerifSans
-
-WhiteSepiaNight
-
-# [Trigger JSON Definitions](https://docs.folivora.ai/)
-
-# BetterTouchTool Trigger JSON Reference
-
-This document provides a a first, incomplete, reference for creating trigger configurations in BetterTouchTool using JSON.
-
-## Basic Trigger Structure
-
-Every trigger must have these required fields:
-
+## Required Structure
 ```json
-{
-  "BTTTriggerType": 123,
-  "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-  "BTTActionsToExecute": [\
-    {\
-      "BTTPredefinedActionType": 45\
-    }\
-  ]
-}
+{"BTTTriggerType": <id>, "BTTTriggerClass": "<class>", "BTTActionsToExecute": [{"BTTPredefinedActionType": <id>}]}
 ```
-
-## Required Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `BTTTriggerType` | Number | The specific trigger ID (see trigger types below) |
-| `BTTTriggerClass` | String | The trigger category (must match the trigger type) |
 
 ## Common Optional Fields
+`BTTUUID` (auto-generated), `BTTTriggerTypeDescription` (display name), `BTTEnabled` (0/1), `BTTOrder`, `BTTActionsToExecute` (array).
 
-| Field | Type | Description | Default |
-| --- | --- | --- | --- |
-| `BTTUUID` | String | Unique identifier | Auto-generated |
-| `BTTTriggerTypeDescription` | String | User-visible name/description | Auto-generated |
-| `BTTEnabled` | Number | Enable/disable trigger (0 or 1) | 1 |
-| `BTTEnabled2` | Number | Secondary enabled state | 1 |
-| `BTTOrder` | Number | Sort order in list | Auto |
-| `BTTActionsToExecute` | Array | Actions to perform | \[\] |
+## Modifier Key Flags
+Cmd=1048576, Opt=524288, Ctrl=262144, Shift=131072, Fn=8388608. Combine by addition (Cmd+Shift=1179648).
 
-## Trigger Categories
+## Colors
+RGBA comma-separated: `"255, 0, 0, 128"` = red 50% transparent.
 
-### 1\. Trackpad Gestures
+## Icons
+Base64 in `BTTIconData`, SF Symbol in `BTTTouchBarItemSFSymbolDefaultIcon`, or file path for Stream Deck.
 
-**BTTTriggerClass Options**:
+---
 
-- `"BTTTriggerTypeTouchpadAll"` \- All trackpads
-- `"BTTTriggerTypeTouchpadBuiltIn"` \- Built-in only
-- `"BTTTriggerTypeTouchpadMagicTrackpad"` \- Magic Trackpad 1
-- `"BTTTriggerTypeTouchpadMagicTrackpad2"` \- Magic Trackpad 2
-- `"BTTTriggerTypeTouchBarTrackpad"` \- Touch Bar surface
+## 1. Trackpad Gestures
+Classes: `BTTTriggerTypeTouchpadAll`, `BTTTriggerTypeTouchpadBuiltIn`, `BTTTriggerTypeTouchpadMagicTrackpad`, `BTTTriggerTypeTouchpadMagicTrackpad2`, `BTTTriggerTypeTouchBarTrackpad`
 
-#### Zero Finger Gestures
+### 0-finger (release)
+214=Release Last Finger (any), 209-213=Release After 1-5 Finger Touch
 
-- `214` \- Release Last Finger Regardless of How Many Were Touching Before
-- `209` \- Release Last Finger After Previous Touch With 1 Finger
-- `210` \- Release Last Finger After Previous Touch With 2 Fingers
-- `211` \- Release Last Finger After Previous Touch With 3 Fingers
-- `212` \- Release Last Finger After Previous Touch With 4 Fingers
-- `213` \- Release Last Finger After Previous Touch With 5 Fingers
+### 1-finger
+215=Touch Start, 157/158=Corner Click BL/BR, 182/183=Corner Click TL/TR, 184-187=Corner Force Click TL/TR/BL/BR, 207=Tap, 208=Double Tap, 203=Force Click, 100-109=Tap regions (Left/Right/Bottom/Top/LeftMid/RightMid/UL/UR/BL/BR)
 
-#### Single Finger Gestures
+### 2-finger
+216=Touch Start, 173=Tap, 179=Double Tap, 174=Click, 175=Force Click, 176/177/178=Click (Left/Right/Both harder), 180/181=Force Click (Left/Right harder), 159-162=Swipe L/R/U/D, 165-168=Swipe from Edge L/R/T/B, 121/122=Pinch In/Out, 138=TipTap Middle, 132/133=TipTap L/R, 142/143/145/146=TipSwipe LF Down/Up/Right/Left
 
-- `215` \- 1 Finger Touch Start
-- `157` \- Corner Click Bottom Left
-- `158` \- Corner Click Bottom Right
-- `182` \- Corner Click Top Left
-- `183` \- Corner Click Top Right
-- `184` \- Corner Force Click Top Left
-- `185` \- Corner Force Click Top Right
-- `186` \- Corner Force Click Bottom Left
-- `187` \- Corner Force Click Bottom Right
-- `207` \- 1 Finger Tap
-- `208` \- 1 Finger Double Tap
-- `203` \- Single Finger Force Click
-- `100` \- 1 Finger Tap Left Side
-- `101` \- 1 Finger Tap Right Side
-- `102` \- 1 Finger Tap Bottom
-- `103` \- 1 Finger Tap Top
-- `104` \- 1 Finger Tap Left Side Middle
-- `105` \- 1 Finger Tap Right Side Middle
-- `106` \- 1 Finger Tap Upper Left
-- `107` \- 1 Finger Tap Upper Right
-- `108` \- 1 Finger Tap Bottom Left
-- `109` \- 1 Finger Tap Bottom Right
+### 3-finger
+217=Touch Start, 110=Tap, 163=Double Tap, 111=Click, 170=Force Click, 181=Click&Hold, 188-190=Click (L/M/R harder), 191-193=Force Click (L/M/R harder), 112-115=Swipe U/D/L/R, 197/198=Pinch In/Out, 139/140=Tap Bottom/Top, 152=Dragging, 153-156=Clickswipe L/R/U/D, 136/137=TipTap L/R, 147-150=Triangle Swipe TL/TR/BL/BR, 204=Drawing
 
-#### Two Finger Gestures
+### 4-finger
+218=Touch Start, 116=Tap, 169=Double Tap, 117=Click, 171=Force Click, 182=Click&Hold, 123-126=Swipe U/D/L/R, 194/195=Pinch In/Out, 205=Drawing
 
-- `216` \- 2 Finger Touch Start
-- `173` \- 2 Finger Tap
-- `179` \- 2 Finger Double-Tap
-- `174` \- 2 Finger Click
-- `175` \- 2 Finger Force Click
-- `176` \- 2 Finger Click (Left Finger Harder)
-- `177` \- 2 Finger Click (Right Finger Harder)
-- `178` \- 2 Finger Click (Both Fingers Same)
-- `180` \- 2 Finger Force Click (Left Finger Harder)
-- `181` \- 2 Finger Force Click (Right Finger Harder)
-- `159` \- 2 Finger Swipe Left
-- `160` \- 2 Finger Swipe Right
-- `161` \- 2 Finger Swipe Up
-- `162` \- 2 Finger Swipe Down
-- `165` \- 2 Finger Swipe From Left Edge
-- `166` \- 2 Finger Swipe From Right Edge
-- `167` \- 2 Finger Swipe From Top Edge
-- `168` \- 2 Finger Swipe From Bottom Edge
-- `121` \- 2 Finger Pinch In
-- `122` \- 2 Finger Pinch Out
-- `138` \- TipTap Middle (2 Fingers Fix)
-- `132` \- TipTap Left (2 Fingers Fix)
-- `133` \- TipTap Right (2 Fingers Fix)
-- `142` \- TipSwipe Left Finger Down (2 Fingers Fix)
-- `143` \- TipSwipe Left Finger Up (2 Fingers Fix)
-- `145` \- TipSwipe Left Finger Right (2 Fingers Fix)
-- `146` \- TipSwipe Left Finger Left (2 Fingers Fix)
+### 5+ finger
+219=Touch Start, 119=Tap, 141=Click, 172=Force Click, 130/131=Swipe D/U, 128/129=Swipe L/R, 200/201=Pinch In/Out, 206=Drawing, 151=Touch/Move, 199=11-Finger/Whole Hand
 
-#### Three Finger Gestures
+### Custom
+164=Custom Tap Sequence (4F), 220=First Touch X Then Release Y
 
-- `217` \- 3 Finger Touch Start
-- `110` \- 3 Finger Tap
-- `163` \- 3 Finger Double-Tap
-- `111` \- 3 Finger Click
-- `170` \- 3 Finger Force Click
-- `181` \- 3 Finger Click & Hold
-- `188` \- 3 Finger Click (Left Finger Harder)
-- `189` \- 3 Finger Click (Middle Finger Harder)
-- `190` \- 3 Finger Click (Right Finger Harder)
-- `191` \- 3 Finger Force Click (Left Finger Harder)
-- `192` \- 3 Finger Force Click (Middle Finger Harder)
-- `193` \- 3 Finger Force Click (Right Finger Harder)
-- `112` \- 3 Finger Swipe Up
-- `113` \- 3 Finger Swipe Down
-- `114` \- 3 Finger Swipe Left
-- `115` \- 3 Finger Swipe Right
-- `197` \- 3 Finger Pinch In
-- `198` \- 3 Finger Pinch Out
-- `139` \- 3 Finger Tap Bottom
-- `140` \- 3 Finger Tap Top
-- `152` \- 3 Finger Dragging
-- `153` \- 3 Finger Clickswipe Left
-- `154` \- 3 Finger Clickswipe Right
-- `155` \- 3 Finger Clickswipe Up
-- `156` \- 3 Finger Clickswipe Down
-- `136` \- TipTap Left (3 Fingers Fix)
-- `137` \- TipTap Right (3 Fingers Fix)
-- `147` \- Triangle Swipe Top Left Corner
-- `148` \- Triangle Swipe Top Right Corner
-- `149` \- Triangle Swipe Bottom Left Corner
-- `150` \- Triangle Swipe Bottom Right Corner
-- `204` \- 3 Finger Drawing
+---
 
-#### Four Finger Gestures
+## 2. Magic Mouse (`BTTTriggerTypeMagicMouse`)
 
-- `218` \- 4 Finger Touch Start
-- `116` \- 4 Finger Tap
-- `169` \- 4 Finger Double Tap
-- `117` \- 4 Finger Click
-- `171` \- 4 Finger Force Click
-- `182` \- 4 Finger Click & Hold
-- `123` \- 4 Finger Swipe Up
-- `124` \- 4 Finger Swipe Down
-- `125` \- 4 Finger Swipe Left
-- `126` \- 4 Finger Swipe Right
-- `194` \- 4 Finger Pinch In
-- `195` \- 4 Finger Pinch Out
-- `205` \- 4 Finger Drawing
+### 0-finger: 51=Release Any, 52-56=Release After 1-5F
+### 1-finger: 50=Touch Start, 1=Tap, 2/3=Tap L/R, 23=Middle Click, 24=Tap Middle, 32=Tap Above Apple, 18/19=Scroll U/D (modifier needed), 33-36=Swipe D/U/L/R
+### 2-finger: 57=Touch Start, 4=Tap, 62=Double Tap, 20=Click, 7/8=Swipe U/D, 5/6=Swipe L/R, 14/15=Pinch In/Out, 16/17=TipTap L/R
+### 3-finger: 58=Touch Start, 9=Tap, 63=Double Tap, 21=Click, 13/12=Swipe U/D, 10/11=Swipe L/R, 30=TipTap L, 37=TipTap M, 31=TipTap R, 60/61=TipSwipe LF Up/Down
+### 4-finger: 59=Touch Start, 25=Click, 27/26=Swipe U/D, 28/29=Swipe L/R
+### Moving/Resize: 40=1F Top, 38=2F Top, 39=3F Top
 
-#### Five And More Finger Gestures
+---
 
-- `219` \- 5 Finger Touch Start
-- `119` \- 5 Finger Tap
-- `141` \- 5 Finger Click
-- `172` \- 5 Finger Force Click
-- `130` \- 5 Finger Swipe Down
-- `131` \- 5 Finger Swipe Up
-- `128` \- 5 Finger Swipe Left
-- `129` \- 5 Finger Swipe Right
-- `200` \- 5 Finger Pinch In
-- `201` \- 5 Finger Pinch Out
-- `206` \- 5 Finger Drawing
-- `151` \- 5 Finger Touch/Move
-- `199` \- 11 Finger Tap / Whole Hand
+## 3. Other Triggers / Automations (`BTTTriggerTypeOtherTriggers`)
 
-#### Your Own Gestures
-
-- `164` \- Custom Tap Sequence (4 Fingers)
-- `220` \- First Touch With X Fingers, Then Release Y Fingers
-
-### 2\. Magic Mouse
-
-**BTTTriggerClass**: `"BTTTriggerTypeMagicMouse"`
-
-#### Zero Finger Gestures
-
-- `51` \- Release Last Finger Regardless of How Many Were Touching Before
-- `52` \- Release Last Finger After Previous Touch With 1 Finger
-- `53` \- Release Last Finger After Previous Touch With 2 Fingers
-- `54` \- Release Last Finger After Previous Touch With 3 Fingers
-- `55` \- Release Last Finger After Previous Touch With 4 Fingers
-- `56` \- Release Last Finger After Previous Touch With 5 Fingers
-
-#### Single Finger Gestures
-
-- `50` \- 1 Finger Touch Start
-- `1` \- 1 Finger Tap
-- `2` \- 1 Finger Tap Left
-- `3` \- 1 Finger Tap Right
-- `23` \- 1 Finger Middle Click
-- `24` \- 1 Finger Tap Middle
-- `32` \- 1 Finger Tap Above Apple
-- `18` \- Scroll Up (modifier key needed)
-- `19` \- Scroll Down (modifier key needed)
-- `33` \- 1 Finger Swipe Down
-- `34` \- 1 Finger Swipe Up
-- `35` \- 1 Finger Swipe Left
-- `36` \- 1 Finger Swipe Right
-
-#### Two Finger Gestures
-
-- `57` \- 2 Finger Touch Start
-- `4` \- 2 Finger Tap
-- `62` \- 2 Finger Double-Tap
-- `20` \- 2 Finger Click
-- `7` \- 2 Finger Swipe Up
-- `8` \- 2 Finger Swipe Down
-- `5` \- 2 Finger Swipe Left
-- `6` \- 2 Finger Swipe Right
-- `14` \- Pinch In
-- `15` \- Pinch Out
-- `16` \- TipTap Left (1 Finger Fix)
-- `17` \- TipTap Right (1 Finger Fix)
-
-#### Three Finger Gestures
-
-- `58` \- 3 Finger Touch Start
-- `9` \- 3 Finger Tap
-- `63` \- 3 Finger Double-Tap
-- `21` \- 3 Finger Click
-- `13` \- 3 Finger Swipe Up
-- `12` \- 3 Finger Swipe Down
-- `10` \- 3 Finger Swipe Left
-- `11` \- 3 Finger Swipe Right
-- `30` \- TipTap Left (2 Fingers Fix)
-- `37` \- TipTap Middle (2 Fingers Fix)
-- `31` \- TipTap Right (2 Fingers Fix)
-- `60` \- TipSwipe Left Finger Up
-- `61` \- TipSwipe Left Finger Down
-
-#### Four Finger Gestures
-
-- `59` \- 4 Finger Touch Start
-- `25` \- 4 Finger Click
-- `27` \- 4 Finger Swipe Up
-- `26` \- 4 Finger Swipe Down
-- `28` \- 4 Finger Swipe Left
-- `29` \- 4 Finger Swipe Right
-
-#### Moving, Resizing and Custom Drawings
-
-- `40` \- 1 Finger Touch Top
-- `38` \- 2 Finger Touch Top
-- `39` \- 3 Finger Touch Top
-
-### 3\. Other Triggers / Automations
-
-**BTTTriggerClass**: `"BTTTriggerTypeOtherTriggers"`
-
-#### Named Trigger / Reusable Trigger Reference
-
-- `643` \- Reusable Named Trigger
-
+### Named Trigger: 643
 ```json
-{
-  "BTTTriggerType": 643,
-  "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
-  "BTTTriggerName": "my_custom_trigger",
-  "BTTNamedTriggerAIDescription": "Trigger for opening Safari",
-  "BTTNamedTriggerAIAllow": 1,
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 49\
-  }]
-}
+{"BTTTriggerType":643,"BTTTriggerClass":"BTTTriggerTypeOtherTriggers","BTTTriggerName":"my_trigger","BTTNamedTriggerAIDescription":"desc","BTTNamedTriggerAIAllow":1,"BTTActionsToExecute":[]}
 ```
 
-#### General
-
-- `685` \- BTT Mobile App Did Connect
-- `686` \- BTT Mobile App Did Disconnect
-- `689` \- Key Remap
-- `688` \- User Notification Did Show
-- `697` \- File Did Change
-- `698` \- Text Selection Did Change
-- `699` \- Script Output Changed
-- `700` \- Advanced Trigger Condition Changed
-- `701` \- Conditional Activation Group Activated
-- `702` \- Conditional Activation Group Deactivated
-- `694` \- Variable Value Changed
-- `691` \- Dock Icon
-- `696` \- Finder Context Menu Extension
-- `703` \- Battery Below X%
-- `704` \- Battery Above X%
-- `705` \- Battery Connected To AC
-- `706` \- Battery Running On Battery
-- `695` \- Did Open URL
-- `715` \- Clipboard Transformer
-- `641` \- Launch on Machine with Serial Number
-- `687` \- App Did Change (Focus)
-- `131` \- App Did Launch
-- `132` \- App Did Terminate
-- `133` \- App Did Activate
-- `134` \- App Did Deactivate
-- `693` \- Focused Window Did Change
-- `713` \- Focused Window Or Window Title Did Change
-- `690` \- Receive Workspace Notification
-- `692` \- Input Source Changed
-- `605` \- Before Mac Goes To Sleep
-- `606` \- After Mac Wakes From Sleep
-- `607` \- Received Distributed Notification With Name
-- `707` \- Did Open Lid
-- `708` \- Did Close Lid
-- `681` \- Did Connect To WiFi With Name
-- `682` \- Did Disconnect From WiFi With Name
-- `683` \- Screen Did Connect
-- `684` \- Screen Did Disconnect
-- `709` \- Did Start Screen Saver
-- `710` \- Did Stop Screen Saver
-- `711` \- Did Lock Screen
-- `712` \- Did Unlock Screen
-- `714` \- Dynamic JS Variable
-- `716` \- Ambient Light Goes Below
-- `717` \- Ambient Light Goes Above
-- `718` \- Ambient Light Abrupt Change By
-- `719` \- Clipboard Contents Changed
-
-#### Window Buttons & Click Actions
-
-- `613` \- Doubleclick Mac Menubar
-- `600` \- Doubleclick Window Titlebar
-- `623` \- Leftclick Full Screen Button
-- `614` \- Rightclick Full Screen Button
-- `627` \- Other Click Fullscreen Window Button
-- `622` \- Leftclick Red Window Button
-- `621` \- Leftclick Orange Window Button
-- `615` \- Leftclick Green Window Button
-- `601` \- Rightclick Red Window Button
-- `602` \- Rightclick Orange Window Button
-- `603` \- Rightclick Green Window Button
-- `626` \- Other Click Red Window Button
-- `625` \- Other Click Orange Window Button
-- `628` \- Other Click Green Window Button
-
-#### Notch
-
-- `649` \- Click Notch
-- `650` \- Double Click Notch
-- `651` \- Right Click Notch
-- `652` \- Move Mouse To Notch
-- `653` \- Move Mouse Away From Notch
-- `654` \- Move Mouse Away From Notch And From Menubar
-
-#### Screen Corners / Edges
-
-- `609` \- Top Left Corner
-- `610` \- Top Right Corner
-- `611` \- Bottom Left Corner
-- `612` \- Bottom Right Corner
-- `659` \- Mouse To Left Screen Edge
-- `660` \- Mouse To Right Screen Edge
-- `661` \- Mouse To Bottom Screen Edge
-- `662` \- Mouse To Top Screen Edge
-- `655` \- Mouse Away From Top Left Corner
-- `656` \- Mouse Away Top Right Corner
-- `657` \- Mouse Away Bottom Left Corner
-- `658` \- Mouse Away Bottom Right Corner
-- `663` \- Mouse Away From Left Screen Edge
-- `664` \- Mouse Away From Right Screen Edge
-- `665` \- Mouse Away From Bottom Screen Edge
-- `666` \- Mouse Away From Top Screen Edge
-
-#### USB & Bluetooth LE
-
-- `672` \- USB Device Did Connect
-- `673` \- USB Device Did Disconnect
-- `679` \- Bluetooth Device Did Connect
-- `680` \- Bluetooth Device Did Disconnect
-- `617` \- BT LE Go Away
-- `616` \- BT LE Come Close
-- `618` \- BT LE Out Of Range
-- `619` \- BT LE In Range Again
-
-#### Time Based Triggers
-
-- `678` \- Date/Time Based (Repeating)
-
-```json
-{
-  "BTTTriggerType": 678,
-  "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
-  "BTTAdditionalConfiguration": "{\"BTTTimedRepeatEveryXSeconds\":\"0 0 * * * *\"}",
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 153\
-  }]
-}
-```
-
-#### Custom Menu Bar Icons
-
-- `667` \- Menu Bar Icon
-- `668` \- Menu Bar Icon (AppleScript)
-- `669` \- Menu Bar Icon (Shell Script)
-- `670` \- Always Hidden Status Item
-
-### 4\. Keyboard Shortcuts
-
-**BTTTriggerClass**: `"BTTTriggerTypeKeyboardShortcut"`
-
-```json
-{
-  "BTTTriggerType": 0,
-  "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-  "BTTShortcutKeyCode": 49,
-  "BTTShortcutModifierKeys": 1048576,
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 45\
-  }]
-}
-```
-
-#### Properties
-
-| Property | Type | Description |
-| --- | --- | --- |
-| `BTTShortcutKeyCode` | Number | Key code value |
-| `BTTShortcutModifierKeys` | Number | Modifier key flags |
-| `BTTLayoutIndependentChar` | String | Layout-independent character |
-| `BTTAutoAdaptToKeyboardLayout` | Number | Auto-adapt to keyboard layout (0/1) |
-| `BTTShortcutScope` | Number | Where shortcut is active |
-| `BTTKeyboardShortcutMinTime` | Number | Minimum hold time |
-| `BTTKeyboardShortcutMaxTime` | Number | Maximum hold time |
-
-### 5\. Key Sequences / Typed Words
-
-**BTTTriggerClass**: `"BTTTriggerTypeKeySequence"`
-
-Key sequences use trigger type `624`.
-
-### 6\. Drawings
-
-**BTTTriggerClass**: `"BTTTriggerTypeDrawings"`
-
-Drawings use trigger type `620`.
-
-```json
-{
-  "BTTTriggerType": 620,
-  "BTTTriggerClass": "BTTTriggerTypeDrawings",
-  "BTTTriggerConfig": {
-    "BTTDrawingName": "My Gesture"
-  },
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 45\
-  }]
-}
-```
-
-### 7\. Mouse
-
-**BTTTriggerClass**: `"BTTTriggerTypeMouse"`
-
-**Note**: Regular mouse buttons (left, right, middle click) are configured differently and don't use trigger types in the same way.
-
-### 8\. Siri Remote
-
-**BTTTriggerClass**: `"BTTTriggerTypeSiriRemote"`
-
-#### Siri Remote Buttons
-
-- `320` \- Volume Up
-- `321` \- Volume Down
-- `322` \- Siri
-- `323` \- Play/Pause
-- `324` \- TV/Screen
-- `325` \- Menu
-- `332` \- Volume Up Hold
-- `333` \- Volume Down Hold
-- `334` \- Siri Hold
-- `335` \- Play/Pause Hold
-- `336` \- TV/Screen Hold
-- `337` \- Menu Hold
-
-#### Siri Remote Touchpad
-
-- `326` \- Touchpad Click
-- `338` \- Touchpad Click Hold
-- `327` \- Touchpad Swipe Left
-- `328` \- Touchpad Swipe Right
-- `329` \- Touchpad Swipe Up
-- `330` \- Touchpad Swipe Down
-- `331` \- Touchpad Tap
-- `339` \- Touchpad Click Left
-- `340` \- Touchpad Click Right
-- `341` \- Touchpad Click Top
-- `342` \- Touchpad Click Bottom
-- `343` \- Touchpad Tap Left
-- `344` \- Touchpad Tap Right
-- `345` \- Touchpad Tap Top
-- `346` \- Touchpad Tap Bottom
-- `347` \- Touchpad Click Hold Left
-- `348` \- Touchpad Click Hold Right
-- `349` \- Touchpad Click Hold Top
-- `350` \- Touchpad Click Hold Bottom
-
-#### New Siri Remote 2 Buttons
-
-- `351` \- Button Left
-- `352` \- Button Right
-- `353` \- Button Up
-- `354` \- Button Down
-- `355` \- Power
-- `356` \- Button Left Hold
-- `357` \- Button Right Hold
-- `358` \- Button Up Hold
-- `359` \- Button Down Hold
-- `360` \- Power Hold
-- `361` \- Mute
-- `362` \- Mute Hold
-
-### 9\. Touch Bar
-
-**BTTTriggerClass**: `"BTTTriggerTypeTouchBar"`
-
-```json
-{
-  "BTTTriggerType": 630,
-  "BTTTriggerClass": "BTTTriggerTypeTouchBar",
-  "BTTTouchBarButtonName": "My Button",
-  "BTTTriggerConfig": {
-    "BTTTouchBarButtonColor": "58.650002, 58.650002, 58.650002, 255.000000",
-    "BTTTouchBarFontColor": "255, 255, 255, 255",
-    "BTTTouchBarFontSize": 15
-  },
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 45\
-  }]
-}
-```
-
-#### Touch Bar Configuration Properties (in BTTTriggerConfig)
-
-| Property | Type | Description | Default |
-| --- | --- | --- | --- |
-| `BTTTouchBarButtonColor` | String | Background color (R,G,B,A) | "58.65, 58.65, 58.65, 255" |
-| `BTTTouchBarFontColor` | String | Text color (R,G,B,A) | "255, 255, 255, 255" |
-| `BTTTouchBarFontSize` | Number | Font size | 15 |
-| `BTTTouchBarButtonWidth` | Number | Width in pixels | Auto |
-| `BTTTouchBarButtonHeight` | Number | Height in pixels | 30 |
-| `BTTTouchBarItemIconWidth` | Number | Icon width | 15 |
-| `BTTTouchBarItemIconHeight` | Number | Icon height | 15 |
-| `BTTTouchBarItemPadding` | Number | Internal padding | 0 |
-| `BTTTouchBarOnlyShowIcon` | Number | Show icon only (0/1) | 0 |
-
-### 10\. Stream Deck
-
-**BTTTriggerClass**: `"BTTTriggerTypeStreamDeck"`
-
-Stream Deck configuration uses similar properties to Touch Bar but in `BTTTriggerConfig`.
-
-### 11\. Notch Bar
-
-**BTTTriggerClass**: `"BTTTriggerTypeNotchBar"`
-
-Notch Bar configuration uses similar properties to Touch Bar but in `BTTTriggerConfig`.
-
-### 12\. Floating Menu
-
-**BTTTriggerClass**: `"BTTTriggerTypeFloatingMenu"`
-
-- `800` \- Floating Menu
-- `827` \- Menu Item
-- `840` \- Slider Item
-- `852` \- Text Field Item
-- `853` \- Text Area Item
-- `871` \- Submenu
-- `872` \- Back Button
-- `873` \- Webview
-- `870` \- Status Items Widget
-- `874` \- iOS Trackpad Item
-- `875` \- Row Breaker
-- `876` \- Column Breaker
-
-### 13\. MIDI
-
-**BTTTriggerClass**: `"BTTTriggerTypeMIDI"`
-
-```json
-{
-  "BTTTriggerType": 650,
-  "BTTTriggerClass": "BTTTriggerTypeMIDI",
-  "BTTTriggerConfig": {
-    "BTTMidiTriggerDeviceName": "*"
-  },
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 45\
-  }]
-}
-```
-
-### 14\. Generic Device
-
-**BTTTriggerClass**: `"BTTTriggerTypeGenericDevice"`
-
-- `880` \- Generic Device Analyzer
-- `881` \- Generic Device Trigger
-
-### 15\. BTT Remote (Legacy)
-
-**BTTTriggerClass**: `"BTTTriggerTypeBTTRemote"`
-
-Legacy BTT Remote triggers are numbered from 300-362.
-
-## Special Configurations
-
-### Colors
-
-Colors are specified as comma-separated RGBA values:
-
-```
-"255, 255, 255, 255" = White (fully opaque)
-"0, 0, 0, 255" = Black (fully opaque)
-"255, 0, 0, 128" = Red (50% transparent)
-```
-
-### Modifier Keys
-
-Modifier keys use bitwise flags:
-
-- Command (⌘): `1048576`
-- Option (⌥): `524288`
-- Control (⌃): `262144`
-- Shift (⇧): `131072`
-- Function (fn): `8388608`
-
-Combine with bitwise OR:
-
-- ⌘⇧: `1048576 | 131072 = 1179648`
-
-### Icons
-
-Icons can be specified as:
-
-1. Base64 encoded image data in `BTTIconData`
-2. SF Symbol names in `BTTTouchBarItemSFSymbolDefaultIcon`
-3. File paths for Stream Deck icons
-
-### Conditions
-
-Advanced conditions use `BTTTriggerConditionsData` with base64 encoded predicates.
-
-## Complete Examples
-
-### Keyboard Shortcut with HUD
-
-```json
-{
-  "BTTTriggerType": 0,
-  "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
-  "BTTShortcutKeyCode": 49,
-  "BTTShortcutModifierKeys": 1179648,
-  "BTTTriggerTypeDescription": "Open Terminal",
-  "BTTTriggerConfig": {
-    "BTTShowHUD": 1,
-    "BTTHUDText": "Terminal Opened",
-    "BTTHUDDetailText": "⌘⇧Space"
-  },
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 49,\
-    "BTTLaunchPath": "/System/Applications/Utilities/Terminal.app"\
-  }]
-}
-```
-
-### Touch Bar Button with Icon
-
-```json
-{
-  "BTTTriggerType": 630,
-  "BTTTriggerClass": "BTTTriggerTypeTouchBar",
-  "BTTTouchBarButtonName": "Safari",
-  "BTTTriggerConfig": {
-    "BTTTouchBarButtonColor": "75.323769, 75.323769, 75.323769, 255.000000",
-    "BTTTouchBarItemIconWidth": 22,
-    "BTTTouchBarItemIconHeight": 22,
-    "BTTTouchBarItemSFSymbolDefaultIcon": "safari"
-  },
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 49,\
-    "BTTLaunchPath": "/Applications/Safari.app"\
-  }]
-}
-```
-
-### Time-Based Trigger (Every Hour)
-
-```json
-{
-  "BTTTriggerType": 678,
-  "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
-  "BTTTriggerTypeDescription": "Hourly Reminder",
-  "BTTAdditionalConfiguration": "{\"BTTTimedRepeatEveryXSeconds\":\"0 0 * * * *\"}",
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 172,\
-    "BTTNotificationText": "Take a break!",\
-    "BTTNotificationDetails": "You've been working for an hour"\
-  }]
-}
-```
-
-### Trackpad Three Finger Swipe
-
-```json
-{
-  "BTTTriggerType": 112,
-  "BTTTriggerClass": "BTTTriggerTypeTouchpadAll",
-  "BTTTriggerTypeDescription": "Switch to Next Desktop",
-  "BTTActionsToExecute": [{\
-    "BTTPredefinedActionType": 2\
-  }]
-}
-```
-
-## Tips
-
-1. Always include both `BTTTriggerType` and `BTTTriggerClass`
-2. Use `BTTTriggerConfig` for Touch Bar, Stream Deck, and Notch Bar properties
-3. Use `BTTAdditionalConfiguration` for most other trigger-specific settings
-4. Actions must be in the `BTTActionsToExecute` array
-5. Test your JSON with BTT's import feature before deploying
-6. Use UUIDs to update existing triggers
-7. Omit optional fields to use defaults
-
-# results matching ""
-
-# No results matching ""
+### App Events: 687=App Focus Changed, 131=Launch, 132=Terminate, 133=Activate, 134=Deactivate
+### Window: 693=Focused Window Changed, 713=Window/Title Changed, 600=Dblclick Titlebar, 613=Dblclick Menubar
+### Window Buttons (Left/Right/Other click): Red=622/601/626, Orange=621/602/625, Green=615/603/628, Fullscreen=623/614/627
+### System: 605=Before Sleep, 606=After Wake, 707/708=Lid Open/Close, 709/710=Screensaver Start/Stop, 711/712=Lock/Unlock Screen
+### Network: 681/682=WiFi Connect/Disconnect, 683/684=Screen Connect/Disconnect
+### Bluetooth/USB: 672/673=USB Connect/Disconnect, 679/680=BT Connect/Disconnect, 616-619=BT LE Close/Away/OutOfRange/InRange
+### Battery: 703/704=Below/Above X%, 705/706=AC Connected/On Battery
+### Input/Variables: 694=Variable Changed, 692=Input Source Changed, 698=Text Selection Changed, 699=Script Output Changed, 700=Adv Condition Changed, 701/702=Conditional Group Activated/Deactivated, 714=Dynamic JS Variable, 715=Clipboard Transformer, 719=Clipboard Changed
+### File/URL: 697=File Changed, 695=Did Open URL
+### Notch: 649=Click, 650=Dblclick, 651=Rightclick, 652/653/654=Mouse To/Away/Away+Menubar
+### Screen Corners: 609-612=TL/TR/BL/BR, 655-658=Away TL/TR/BL/BR
+### Screen Edges: 659-662=Mouse To L/R/B/T, 663-666=Away L/R/B/T
+### Misc: 685/686=Mobile Connect/Disconnect, 688=Notification Showed, 689=Key Remap, 691=Dock Icon, 696=Finder Context Menu, 607=Distributed Notification, 641=Serial Number Match, 690=Workspace Notification, 716/717/718=Ambient Light Below/Above/Change
+### Time: 678=Date/Time Repeating (cron in `BTTAdditionalConfiguration`: `{"BTTTimedRepeatEveryXSeconds":"0 0 * * * *"}`)
+### Menu Bar: 667=Icon, 668=Icon (AppleScript), 669=Icon (Shell), 670=Always Hidden Status Item
+
+---
+
+## 4. Keyboard Shortcuts (`BTTTriggerTypeKeyboardShortcut`)
+Type: 0. Props: `BTTShortcutKeyCode`, `BTTShortcutModifierKeys`, `BTTLayoutIndependentChar`, `BTTAutoAdaptToKeyboardLayout`, `BTTShortcutScope`, `BTTKeyboardShortcutMinTime`/`MaxTime`
+
+## 5. Key Sequences (`BTTTriggerTypeKeySequence`): Type 624
+## 6. Drawings (`BTTTriggerTypeDrawings`): Type 620, config in `BTTTriggerConfig.BTTDrawingName`
+## 7. Mouse (`BTTTriggerTypeMouse`): Regular buttons configured differently
+
+## 8. Siri Remote (`BTTTriggerTypeSiriRemote`)
+Buttons: 320-325=VolUp/VolDown/Siri/PlayPause/TV/Menu, 332-337=same Hold
+Touchpad: 326=Click, 338=Click Hold, 327-330=Swipe L/R/U/D, 331=Tap, 339-342=Click L/R/T/B, 343-346=Tap L/R/T/B, 347-350=Click Hold L/R/T/B
+Remote 2: 351-354=Button L/R/U/D, 355=Power, 356-360=Hold versions, 361/362=Mute/Mute Hold
+
+## 9. Touch Bar (`BTTTriggerTypeTouchBar`): Type 630
+Config in `BTTTriggerConfig`: `BTTTouchBarButtonColor` (RGBA), `BTTTouchBarFontColor`, `BTTTouchBarFontSize`, `BTTTouchBarButtonWidth`/`Height`, `BTTTouchBarItemIconWidth`/`Height`, `BTTTouchBarItemPadding`, `BTTTouchBarOnlyShowIcon`
+
+## 10. Stream Deck (`BTTTriggerTypeStreamDeck`): Similar to Touch Bar config
+## 11. Notch Bar (`BTTTriggerTypeNotchBar`): Similar to Touch Bar config
+
+## 12. Floating Menu (`BTTTriggerTypeFloatingMenu`)
+800=Menu, 827=MenuItem, 840=Slider, 852=TextField, 853=TextArea, 871=Submenu, 872=BackButton, 873=Webview, 870=StatusWidget, 874=iOSTrackpad, 875=RowBreaker, 876=ColumnBreaker
+
+## 13. MIDI (`BTTTriggerTypeMIDI`): Type 650, config `BTTMidiTriggerDeviceName` ("*" for any)
+## 14. Generic Device (`BTTTriggerTypeGenericDevice`): 880=Analyzer, 881=Trigger
+## 15. BTT Remote Legacy (`BTTTriggerTypeBTTRemote`): Types 300-362

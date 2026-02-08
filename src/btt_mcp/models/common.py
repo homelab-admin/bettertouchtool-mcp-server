@@ -2,8 +2,7 @@
 Common models shared across all BTT MCP tools.
 """
 
-from enum import Enum
-from typing import Optional
+from typing import Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -14,12 +13,11 @@ from btt_mcp.config import (
     get_default_use_cli,
 )
 
-
-class ResponseFormat(str, Enum):
-    """Output format for tool responses."""
-
-    MARKDOWN = "markdown"
-    JSON = "json"
+# Use Literal instead of Enum to avoid $ref in JSON schema.
+# VS Code Copilot cannot resolve $ref references in tool parameter schemas,
+# which causes tool invocations to silently fail.
+# See: https://github.com/microsoft/vscode/issues/286179
+ResponseFormat = Literal["markdown", "json"]
 
 
 class BTTConnectionConfig(BaseModel):

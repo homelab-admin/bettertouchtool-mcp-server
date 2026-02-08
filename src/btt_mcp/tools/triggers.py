@@ -14,7 +14,6 @@ from btt_mcp.models import (
     GetTriggerInput,
     GetTriggersInput,
     ListNamedTriggersInput,
-    ResponseFormat,
     UpdateTriggerInput,
 )
 from btt_mcp.server import mcp
@@ -60,7 +59,7 @@ async def btt_get_triggers(params: GetTriggersInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:
@@ -99,7 +98,7 @@ async def btt_get_trigger(params: GetTriggerInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:
@@ -135,7 +134,7 @@ async def btt_list_named_triggers(params: ListNamedTriggersInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:

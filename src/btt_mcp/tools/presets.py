@@ -11,7 +11,6 @@ from btt_mcp.models import (
     ExportPresetInput,
     GetPresetDetailsInput,
     ImportPresetInput,
-    ResponseFormat,
     RevealElementInput,
 )
 from btt_mcp.server import mcp
@@ -110,7 +109,7 @@ async def btt_get_preset_details(params: GetPresetDetailsInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:

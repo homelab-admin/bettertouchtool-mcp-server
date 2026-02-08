@@ -12,7 +12,6 @@ from btt_mcp.models import (
     GetTriggerInput,
     GetTriggersInput,
     GetVariableInput,
-    ResponseFormat,
     SetVariableInput,
     TriggerNamedInput,
     UpdateWidgetInput,
@@ -49,11 +48,13 @@ class TestBTTConnectionConfig:
 
 
 class TestResponseFormat:
-    """Tests for ResponseFormat enum."""
+    """Tests for ResponseFormat type alias."""
 
     def test_values(self):
-        assert ResponseFormat.MARKDOWN == "markdown"
-        assert ResponseFormat.JSON == "json"
+        # ResponseFormat is now Literal["markdown", "json"]
+        params = GetTriggersInput()
+        assert params.response_format == "markdown"
+        assert params.response_format in ("markdown", "json")
 
 
 class TestTriggerModels:
@@ -63,7 +64,7 @@ class TestTriggerModels:
         params = GetTriggersInput()
         assert params.trigger_type is None
         assert params.trigger_id is None
-        assert params.response_format == ResponseFormat.MARKDOWN
+        assert params.response_format == "markdown"
 
     def test_get_trigger_requires_uuid(self):
         with pytest.raises(ValidationError):

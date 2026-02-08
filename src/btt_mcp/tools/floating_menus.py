@@ -10,7 +10,6 @@ import uuid as uuid_lib
 
 from btt_mcp.client import btt_request
 from btt_mcp.formatters import format_floating_menu, format_floating_menus_list
-from btt_mcp.models import ResponseFormat
 from btt_mcp.models.floating_menus import (
     AddFloatingMenuItemInput,
     CreateFloatingMenuInput,
@@ -59,7 +58,7 @@ async def btt_get_floating_menus(params: GetFloatingMenusInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:
@@ -98,7 +97,7 @@ async def btt_get_floating_menu(params: GetFloatingMenuInput) -> str:
     if result.startswith("Error:"):
         return result
 
-    if params.response_format == ResponseFormat.JSON:
+    if params.response_format == "json":
         return result
 
     try:

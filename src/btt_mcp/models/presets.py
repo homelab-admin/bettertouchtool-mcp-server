@@ -63,7 +63,7 @@ class GetPresetDetailsInput(BaseModel):
         min_length=1,
     )
     response_format: ResponseFormat = Field(
-        default=ResponseFormat.MARKDOWN,
+        default="markdown",
         description="Output format: 'markdown' for human-readable or 'json' for raw data",
     )
     connection: BTTConnectionConfig = Field(
